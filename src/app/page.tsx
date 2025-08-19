@@ -24,7 +24,8 @@ const crimsonText = Crimson_Text({
   subsets: ["latin"],
 });
 
-export default function Home({ columns = 12 }: { columns?: number }) {
+export default function Home() {
+  const columns = 12;
   const gradients: string[] = [
     "linear-gradient(180deg, #000000, #000000, #000000, #ad056a )",
     "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7)",
@@ -164,9 +165,7 @@ export default function Home({ columns = 12 }: { columns?: number }) {
           <div className="p-8 flex flex-col justify-center items-center font-mono gap-1.5">
             <Image src={footerTtoflLogo} alt={"logo"} className="w-18" />
             <div className="text-[12px]">Empowering the future</div>
-            <div className="text-[12px]">
-              © 2025 TTOFL. All rights reserved
-            </div>
+            <div className="text-[12px]">© 2025 TTOFL. All rights reserved</div>
           </div>
         </div>
       </section>
