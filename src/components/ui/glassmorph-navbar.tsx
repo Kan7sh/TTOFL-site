@@ -9,7 +9,7 @@ export default function GlassmorphNavBar() {
 
   return (
     <nav
-      className={`fixed left-1/2     flex-col px-5 w-11/12 md:rounded-full -translate-x-1/2 top-0 z-50 flex items-center  mt-7 p-3 max-w-7xl bg-background/20 backdrop-blur-lg ${
+      className={`fixed left-1/2 flex-col px-5 w-11/12 md:rounded-2xl -translate-x-1/2 top-0 z-50 flex items-center  mt-7 p-3 max-w-8xl bg-background/20 backdrop-blur-lg ${
         isOpen ? "rounded-3xl" : "rounded-full"
       }`}
     >
