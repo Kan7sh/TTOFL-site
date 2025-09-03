@@ -1,53 +1,93 @@
-import GlassmorphNavBar from "@/components/ui/glassmorph-navbar";
-import { Yellowtail, Crimson_Text } from "next/font/google";
-import footerTtoflLogo from "@/assets/images/ttofl_logo_monogram.png";
-import satellite from "@/assets/images/Satellite.png";
-import Image from "next/image";
-const yellowtail = Yellowtail({
-  variable: "--font-yellowt",
-  weight: "400",
-  subsets: ["latin"],
-});
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+"use client";
 
-const crimsonText = Crimson_Text({
-  variable: "--font-crimsont",
-  weight: "700",
-  subsets: ["latin"],
-});
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import GlassmorphNavBar from "@/components/ui/glassmorph-navbar";
+
+// Replace with image URLs later
+const slides = ["#01c980", "#0186fe", "#f87171", "#fbbf24", "#0f0f0f"];
 
 export default function Home() {
-  const columns = 12;
-  const gradients: string[] = [
-    "linear-gradient(180deg, #000000, #000000, #000000, #ad056a )",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7, #fa2ba7, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #912365, #fa2ba7,#fa2ba7, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000, #000000, #000000, #912365,#fa2ba7, #fa2ba7,#fa2ba7, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000, #000000, #000000, #000000,  #912365,#fa2ba7, #fa2ba7,#fa2ba7, #fa2ba7)",
-    "linear-gradient(180deg, #000000, #000000, #000000,  #ad056a )",
-    "linear-gradient(180deg, #000000, #000000, #000000, #ad056a )",
-    "linear-gradient(180deg, #000000, #000000, #000000, #fa2ba7 )",
-  ];
+  const [[page, direction], setPage] = useState<[number, number]>([0, 0]);
 
-  const items = Array.from({ length: Math.max(1, columns) });
+  const imageIndex = ((page % slides.length) + slides.length) % slides.length;
+
+  const paginate = (newDirection: number) => {
+    setPage(([prevPage]) => [prevPage + newDirection, newDirection]);
+  };
+
+  // ✅ Auto-slide that keeps running
+  useEffect(() => {
+    const interval = setInterval(() => {
+      paginate(1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const variants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? "100%" : "-100%",
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+      zIndex: 1,
+    },
+    exit: (direction: number) => ({
+      x: direction < 0 ? "100%" : "-100%",
+      opacity: 0,
+      zIndex: 0,
+    }),
+  };
+
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset: number, velocity: number) =>
+    Math.abs(offset) * velocity;
 
   return (
-    <div className="relative w-full min-h-screen bg-fuchsia-200">
+    <div className="relative w-full min-h-screen overflow-hidden">
       <GlassmorphNavBar />
-      <main className="p-6"></main>
+
+      {/* Carousel */}
+      <div className="relative w-full h-screen flex items-center justify-center">
+        <AnimatePresence initial={false} custom={direction}>
+          <motion.div
+            key={page}
+            className="absolute top-0 left-0 w-full h-full"
+            style={{
+              background: slides[imageIndex].startsWith("#")
+                ? slides[imageIndex]
+                : `url(${slides[imageIndex]}) center/cover no-repeat`,
+            }}
+            custom={direction}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={1}
+            onDragEnd={(e, { offset, velocity }) => {
+              const swipe = swipePower(offset.x, velocity.x);
+
+              if (swipe < -swipeConfidenceThreshold) {
+                paginate(1);
+              } else if (swipe > swipeConfidenceThreshold) {
+                paginate(-1);
+              }
+            }}
+          />
+        </AnimatePresence>
+      </div>
+
+      {/* Overlay content */}
+      <main className="absolute inset-0 flex items-center justify-center z-10">
+        <h1 className="text-white text-4xl font-bold drop-shadow-lg">
+          Drag or Wait for Auto-Slide
+        </h1>
+      </main>
     </div>
   );
 }
