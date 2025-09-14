@@ -13,16 +13,11 @@ const slides = [
   {
     image: banner1.src,
     content: (
-      <div className="space-y-4">
-        <h1 className="text-white text-5xl font-bold drop-shadow-lg">
-          Welcome to Slide One 🚀
-        </h1>
-        <p className="text-white text-lg">
-          This is some custom description under the heading.
-        </p>
-        <button className="px-4 py-2 bg-white text-black rounded-lg shadow">
-          Get Started
-        </button>
+      <div className="space-y-4 ">
+        <div className="text-emerald-400/90 text-5xl font-bold drop-shadow-lg ">
+          Cutting-edge Mobile Apps
+        </div>
+        <div>designed for the future</div>
       </div>
     ),
   },
@@ -30,7 +25,7 @@ const slides = [
     image: banner2.src,
     content: (
       <div className="space-y-4 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-xl font-bold drop-shadow-lg ">
+        <div className="text-emerald-400/90 text-5xl font-extrabold drop-shadow-lg ">
           Technology solutions
         </div>
         <div className="pb-10 text-4xl">that transform industries</div>
@@ -148,7 +143,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.8 }}
-            className="text-white text-5xl font-bold max-w-lg drop-shadow-lg"
+            className="text-white text-5xl font-bold max-w-200 drop-shadow-lg"
           >
             {slides[imageIndex].content}
           </motion.h1>

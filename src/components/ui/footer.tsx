@@ -14,39 +14,22 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>Digital Business</li>
-              <li>Platform Modernization</li>
-              <li>AI/GenAI</li>
-            </ul>
-          </div>
-
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 ">
           <div>
             <h3 className="text-lg font-semibold mb-4">Industries</h3>
             <ul className="space-y-2">
-              <li>BFSI</li>
-              <li>Life Sciences</li>
-              <li>Retail & CPG</li>
-              <li>Automotive</li>
+              <li>Education</li>
+              <li>Agriculture</li>
+              <li>Health and Fitness</li>
+              <li>Automobile</li>
               <li>Manufacturing</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Capabilities</h3>
+            <h3 className="text-lg font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li>Site Reliability Engineering (SRE)</li>
-              <li>Cloud Engineering</li>
-              <li>DevSecOps</li>
-              <li>Information Security</li>
-              <li>Agile</li>
-              <li>Quality Engineering</li>
-              <li>Salesforce</li>
-              <li>Data Engineering</li>
-              <li>Digital Engineering</li>
+              <li>Society Cars</li>
             </ul>
           </div>
 
@@ -78,10 +61,8 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
-            <span>© 2025 Altimetrik Corp.</span>
+            <span>© 2025 TTOFL</span>
             <a href="#">Privacy Policy</a>
-            <a href="#">Cookies</a>
-            <a href="#">Transparency in Coverage Rule</a>
           </div>
 
           <div className="flex items-center gap-6 text-xl">
