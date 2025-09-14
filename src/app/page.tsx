@@ -163,10 +163,9 @@ export default function Home() {
     Math.abs(offset) * velocity;
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen overflow-hidden bg-neutral-950">
       <GlassmorphNavBar />
 
-      {/* Carousel */}
       <div className="relative w-full h-screen flex items-center justify-center">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -196,7 +195,6 @@ export default function Home() {
           />
         </AnimatePresence>
 
-        {/* ✅ Text Overlay (custom per slide) */}
         <div className="absolute inset-0 flex items-center pl-12 z-20">
           <motion.h1
             key={page + "-text"}

@@ -19,10 +19,19 @@ export default function GlassmorphNavBar() {
           <div className="hidden gap-4 md:flex"></div>
         </div>
         <div className="hidden md:block">
-          <div className="flex flex-row  gap-10 px-5 py-3 font-mono">
-            <Link href="/"> Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/products">Products</Link>
+          <div className="flex flex-row  items-center gap-10 px-5 py-3">
+            <Link href="/" className="text-white hover:underline">
+              Home
+            </Link>
+            <Link href="/about" className="text-white hover:underline">
+              About
+            </Link>
+            <Link href="/products" className="text-white hover:underline">
+              Products
+            </Link>
+            <div className="bg-white text-black py-2 font-bold px-7 rounded-3xl hover:scale-0.5">
+              Contact us
+            </div>
           </div>
         </div>
         <div className="md:hidden">
