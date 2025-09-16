@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export default function AboutPage() {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+    <div className="relative flex h-[50rem] w-full items-center justify-center bg-neutral-950">
       <div
         className={cn(
           "absolute inset-0",
