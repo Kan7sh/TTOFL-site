@@ -22,7 +22,6 @@ export default function Footer() {
               <li>Agriculture</li>
               <li>Health and Fitness</li>
               <li>Automobile</li>
-              <li>Manufacturing</li>
             </ul>
           </div>
 

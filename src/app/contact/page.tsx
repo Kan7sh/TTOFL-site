@@ -4,6 +4,7 @@ export default function ContactPage() {
   return (
     <div>
       <AnimatedGridPattern />
+      wow
     </div>
   );
 }

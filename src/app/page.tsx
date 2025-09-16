@@ -6,7 +6,11 @@ import GlassmorphNavBar from "@/components/ui/glassmorph-navbar";
 import banner1 from "@/assets/images/B1.png";
 import banner2 from "@/assets/images/B2.png";
 import banner3 from "@/assets/images/B3.png";
+import banner4 from "@/assets/images/B4.png";
 import Footer from "@/components/ui/footer";
+import card1 from "@/assets/images/C1.png";
+import card2 from "@/assets/images/C2.png";
+import card3 from "@/assets/images/C3.png";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Cover } from "@/components/ui/cover";
 import { WobbleCard } from "@/components/ui/wobble-card";
@@ -49,34 +53,16 @@ const slides = [
     image: banner1.src,
     content: (
       <div className="space-y-4 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-5xl font-extrabold drop-shadow-lg ">
-          Cutting-edge mobile apps
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Reimagining Industries
         </div>
-        <div className="pb-10 text-4xl">designed for the future</div>
+        <div className="pb-10 text-5xl">One Smart Solution at a Time</div>
         <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
-            <span className="absolute inset-0 overflow-hidden rounded-full">
-              <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              Explore Products
             </span>
-            <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-              <span className="text-2xl">About us</span>
-              <svg
-                fill="none"
-                height="75"
-                viewBox="0 0 24 24"
-                width="30"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.75 8.75L14.25 12L10.75 15.25"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                />
-              </svg>
-            </div>
-            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
           </button>
         </ul>
       </div>
@@ -86,42 +72,44 @@ const slides = [
     image: banner2.src,
     content: (
       <div className="space-y-4 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-5xl font-extrabold drop-shadow-lg ">
-          Technology solutions
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Driven by Technology
         </div>
-        <div className="pb-10 text-4xl">that transform industries</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
-            <span className="absolute inset-0 overflow-hidden rounded-full">
-              <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-            </span>
-            <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-              <span className="text-2xl">Explore Products</span>
-              <svg
-                fill="none"
-                height="75"
-                viewBox="0 0 24 24"
-                width="30"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.75 8.75L14.25 12L10.75 15.25"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                />
-              </svg>
-            </div>
-            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-          </button>
-        </ul>
+        <div className="pb-10 text-5xl">Inspired by Insight</div>
+        <ul className="list-disc pl-6 text-white justify-self-start"></ul>
       </div>
     ),
   },
   {
     image: banner3.src,
-    content: <div></div>,
+    content: (
+      <div className="space-y-4 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Empowering Industries
+        </div>
+        <div className="pb-10 text-5xl">with innovative solutions</div>
+        <ul className="list-disc pl-6 text-white justify-self-start"></ul>
+      </div>
+    ),
+  },
+  {
+    image: banner4.src,
+    content: (
+      <div className="space-y-4 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
   },
 ];
 
@@ -137,7 +125,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       paginate(1);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -222,6 +210,13 @@ export default function Home() {
                   committed to creating top-tier mobile applications for you.
                 </p>
               </div>
+              <img
+                src={card1.src}
+                width={500}
+                height={500}
+                alt="linear demo image"
+                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+              />
             </WobbleCard>
             <WobbleCard containerClassName=" bg-[#0] min-h-[40px] lg:min-h-[300px] ">
               <div className="max-w-xs">
@@ -234,6 +229,13 @@ export default function Home() {
                   crafted with precision and care.
                 </p>
               </div>
+              <img
+                src={card2.src}
+                width={500}
+                height={500}
+                alt="linear demo image"
+                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+              />
             </WobbleCard>
           </div>
           <div className="flex flex-row-reverse items-center px-10">
@@ -249,6 +251,13 @@ export default function Home() {
                   better society.
                 </p>
               </div>
+              <img
+                src={card3.src}
+                width={500}
+                height={500}
+                alt="linear demo image"
+                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+              />
             </WobbleCard>
             <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white flex-1 p-5">
               Building amazing Products <br />
