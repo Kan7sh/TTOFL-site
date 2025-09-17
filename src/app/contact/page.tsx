@@ -25,28 +25,28 @@ export default function ContactPage() {
         fill="white"
       />
       <div className="flex flex-col  items-center justify-center absolute top-50 gap-5">
-        <div className="flex flex-row ">
+        <div className="flex flex-row kustify-between gap-20">
           <div className="flex flex-col gap-5">
-            <div className="text-2xl md:text-3xl lg:text-4xl w-180 font-extrabold  text-white z-100">
+            <div className="text-2xl md:text-3xl lg:text-4xl w-160 font-extrabold  text-white z-100">
               Got an idea, feedback, or just want to say hi? Our inbox is always
-              open.
+              open
             </div>
             <Input
               type="Name"
               placeholder="Name"
-              className="bg-neutral-800 h-12 w-120"
+              className="bg-neutral-800 h-12 w-140"
             />
 
             <Input
               type="email"
               placeholder="Email"
-              className="bg-neutral-800 h-12 w-120"
+              className="bg-neutral-800 h-12 w-140"
             />
             <Textarea
               placeholder="Type your message here."
-              className="bg-neutral-800 h-30 w-120"
+              className="bg-neutral-800 h-30 w-140"
             />
-            <InteractiveHoverButton className="w-120 rounded-xl h-10 bg-emerald-400/90 border-none text-white">
+            <InteractiveHoverButton className="w-140 rounded-xl h-10 bg-emerald-400/90 border-none text-white">
               Get In Touch
             </InteractiveHoverButton>
           </div>
