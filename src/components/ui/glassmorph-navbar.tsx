@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import ttoflLogo from "@/assets/images/ttofl_logo.png";
 import Image from "next/image";
+import { InteractiveHoverButton } from "./interactiveHoverButton";
 export default function GlassmorphNavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,9 +30,9 @@ export default function GlassmorphNavBar() {
             <Link href="/products" className="text-white hover:underline">
               Products
             </Link>
-            <div className="bg-white text-black py-2 font-bold px-7 rounded-3xl hover:scale-0.5">
-              Contact us
-            </div>
+            <Link href="/contact">
+              <InteractiveHoverButton>Contact us</InteractiveHoverButton>
+            </Link>
           </div>
         </div>
         <div className="md:hidden">

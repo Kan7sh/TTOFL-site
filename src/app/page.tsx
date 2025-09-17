@@ -11,6 +11,7 @@ import Footer from "@/components/ui/footer";
 import card1 from "@/assets/images/C1.png";
 import card2 from "@/assets/images/C2.png";
 import card3 from "@/assets/images/C3.png";
+import home1 from "@/assets/images/H1.png";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Cover } from "@/components/ui/cover";
 import { WobbleCard } from "@/components/ui/wobble-card";
@@ -52,7 +53,7 @@ const slides = [
   {
     image: banner1.src,
     content: (
-      <div className="space-y-4 flex flex-col items-start content-start">
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Reimagining Industries
         </div>
@@ -71,7 +72,7 @@ const slides = [
   {
     image: banner2.src,
     content: (
-      <div className="space-y-4 flex flex-col items-start content-start">
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Driven by Technology
         </div>
@@ -83,7 +84,7 @@ const slides = [
   {
     image: banner3.src,
     content: (
-      <div className="space-y-4 flex flex-col items-start content-start">
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Empowering Industries
         </div>
@@ -95,7 +96,7 @@ const slides = [
   {
     image: banner4.src,
     content: (
-      <div className="space-y-4 flex flex-col items-start content-start">
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Smart Solutions
         </div>
@@ -196,7 +197,7 @@ export default function Home() {
           </motion.h1>
         </div>
       </div>
-      <div className="py-40">
+      <div className="pt-35 pb-28">
         <div className="flex flex-col gap-10">
           <div className="flex flex-row items-center gap-10 px-10">
             <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] ">
@@ -242,7 +243,7 @@ export default function Home() {
             <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] flex-1">
               <div className="max-w-xs">
                 <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Our Promise{" "}
+                  Our Promise
                 </h2>
                 <p className="mt-4 text-left  text-base/6 text-neutral-200">
                   At TTOFL, we're not just creating apps; we're crafting
@@ -266,6 +267,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div>
+        <img src={home1.src} alt="linear demo image" className="" />
+      </div>
+
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
