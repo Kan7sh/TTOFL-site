@@ -43,7 +43,7 @@ export default function AboutPage() {
             Learn more | Grow more | Spread more
           </div> */}
         <div className="flex flex-row gap-10 justify-between items-center p-14">
-          <div className="text-2xl w-180 text-justify">
+          <div className="text-2xl w-180 text-justify text-gray-300">
             At TTOFL, we believe technology and innovation are not just tools,
             they are pathways to progress. Our mission is to create platforms
             that solve real-world challenges, empower graduates, support
@@ -128,7 +128,7 @@ export default function AboutPage() {
         </section>
 
         <div className="font-mono mt-9 mb-3 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
-          Why Choose Us?
+          What Drives Us?
         </div>
         <div className="py-10">
           <div className="flex flex-col h-screen gap-16">
@@ -217,7 +217,7 @@ export default function AboutPage() {
           </div>
           <div className="py-16 px-6 md:px-20">
             <div className="font-mono text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
-              Why Partner with Us
+              Why Partner with Us?
             </div>
             <div className="flex flex-row gap-10 justify-between items-center mt-6 p-14">
               <img

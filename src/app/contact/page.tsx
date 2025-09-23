@@ -34,19 +34,19 @@ export default function ContactPage() {
             <Input
               type="Name"
               placeholder="Name"
-              className="bg-neutral-800 h-12 w-140"
+              className="bg-neutral-800 h-12 w-140 border-gray-500"
             />
 
             <Input
               type="email"
               placeholder="Email"
-              className="bg-neutral-800 h-12 w-140"
+              className="bg-neutral-800 h-12 w-140 border-gray-500"
             />
             <Textarea
               placeholder="Type your message here."
-              className="bg-neutral-800 h-30 w-140"
+              className="bg-neutral-800 h-30 w-140 border-gray-500"
             />
-            <InteractiveHoverButton className="w-140 rounded-xl h-10 bg-emerald-400/90 border-none text-white">
+            <InteractiveHoverButton className="w-140 rounded-xl h-10 bg-emerald-400/90 border-none text-white ">
               Get In Touch
             </InteractiveHoverButton>
           </div>
