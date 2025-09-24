@@ -33,7 +33,7 @@ export default function AboutPage() {
         <div className="font-mono top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center  text-white z-10">
           ABOUT US
         </div>
-        <div className="max-w-3xl text-center mt-2 text-base md:text-md lg:text-md  text-emerald-400/90 z-10 px-5">
+        <div className="max-w-3xl text-center mt-2 text-base md:text-lg lg:text-lg  text-emerald-400/90 z-10 px-5">
           Technology with Purpose. Innovation with Impact
         </div>
         {/* <div className="text-emerald-400/90 text-3xl text-center font-mono font-extrabold drop-shadow-lg mt-10 w-300">
