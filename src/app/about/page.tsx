@@ -8,9 +8,13 @@ import { WobbleCard } from "@/components/ui/wobble-card";
 import { cn } from "@/lib/utils";
 import about1 from "@/assets/images/A1.png";
 import about2 from "@/assets/images/A2.png";
-import { Card, CardContent } from "@/components/ui/card";
-import { Car, GraduationCap, Leaf, Pill } from "lucide-react";
+import aboudCard1 from "@/assets/images/AC1.png";
+import aboudCard2 from "@/assets/images/AC2.png";
+import aboudCard3 from "@/assets/images/AC3.png";
+import aboudCard4 from "@/assets/images/AC4.png";
+
 import { InteractiveHoverButton } from "@/components/ui/interactiveHoverButton";
+import { CometCard } from "@/components/ui/comet-card";
 
 export default function AboutPage() {
   return (
@@ -33,15 +37,10 @@ export default function AboutPage() {
         <div className="font-mono top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center  text-white z-10">
           ABOUT US
         </div>
-        <div className="max-w-3xl text-center mt-2 text-base md:text-lg lg:text-lg  text-emerald-400/90 z-10 px-5">
-          Technology with Purpose. Innovation with Impact
+        <div className="max-w-3xl text-center mt-2 text-base md:text-lg lg:text-xl  text-emerald-400/90 z-10 px-5">
+          Technology with Purpose, Innovation with Impact
         </div>
-        {/* <div className="text-emerald-400/90 text-3xl text-center font-mono font-extrabold drop-shadow-lg mt-10 w-300">
-            WELCOME TO THE TEAM OF FUTURE LEARNING (TTOFL)
-          </div>
-          <div className="text-[#767676] font-mono pb-10">
-            Learn more | Grow more | Spread more
-          </div> */}
+
         <div className="flex flex-row gap-10 justify-between items-center p-14">
           <div className="text-2xl w-180 text-justify text-gray-300">
             At TTOFL, we believe technology and innovation are not just tools,
@@ -75,55 +74,149 @@ export default function AboutPage() {
           </div>
         </div>
         <section className="py-8 px-6 md:px-20">
-          <h2 className="text-3xl font-bold mb-10 text-center text-emerald-400/90">
+          <h2 className="text-4xl font-bold mb-2 text-center text-emerald-400/90">
             Our Areas of Focus
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="shadow-md border-gray-500">
-              <CardContent className="p-6 text-center">
-                <Leaf className="w-10 h-10 mx-auto mb-4 text-green-600" />
-                <h3 className="font-semibold text-xl mb-2">Agriculture</h3>
-                <p className="text-sm">
-                  Agriculture Connecting fresh agri-graduates with farmers to
-                  boost productivity, promote organic farming, and streamline
-                  logistics — creating jobs while improving farmer incomes.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="shadow-md border-gray-500">
-              <CardContent className="p-6 text-center">
-                <Pill className="w-10 h-10 mx-auto mb-4 text-blue-600" />
-                <h3 className="font-semibold text-xl mb-2">Healthcare (B2B)</h3>
-                <p className="text-sm">
-                  A medicine review & feedback platform that gathers real-world
-                  insights from patients and doctors, empowering pharmaceutical
-                  companies and creating opportunities for pharmacy graduates.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="shadow-md border-gray-500">
-              <CardContent className="p-6 text-center">
-                <GraduationCap className="w-10 h-10 mx-auto mb-4 text-yellow-600" />
-                <h3 className="font-semibold text-xl mb-2">Education</h3>
-                <p className="text-sm">
-                  A unified platform delivering affordable, high-quality
-                  technology training for Tier 3 students, bridging the gap
-                  between academics and employability.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="shadow-md border-gray-500">
-              <CardContent className="p-6 text-center">
-                <Car className="w-10 h-10 mx-auto mb-4 text-red-600" />
-                <h3 className="font-semibold text-xl mb-2">Automobile</h3>
-                <p className="text-sm">
-                  Automobile – Society Cars: a one-stop automobile service
-                  platform for residential communities, offering trusted,
-                  verified vendors and simplified car care in a single
-                  application.
-                </p>
-              </CardContent>
-            </Card>
+            <CometCard>
+              <button
+                type="button"
+                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                aria-label="View invite F7RA"
+                style={{
+                  transformStyle: "preserve-3d",
+                  transform: "none",
+                  opacity: 1,
+                }}
+              >
+                <div className="mx-2 flex-1">
+                  <div className="relative mt-2 aspect-[3/4] w-full">
+                    <img
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      alt="Invite background"
+                      src={aboudCard1.src}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                        opacity: 1,
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
+                  <div className="text-xs font-mono text-justify">
+                    Agriculture Connecting fresh agri-graduates with farmers to
+                    boost productivity, promote organic farming, and streamline
+                    logistics — creating jobs while improving farmer incomes.
+                  </div>
+                </div>
+              </button>
+            </CometCard>
+            <CometCard>
+              <button
+                type="button"
+                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                aria-label="View invite F7RA"
+                style={{
+                  transformStyle: "preserve-3d",
+                  transform: "none",
+                  opacity: 1,
+                }}
+              >
+                <div className="mx-2 flex-1">
+                  <div className="relative mt-2 aspect-[3/4] w-full">
+                    <img
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      alt="Invite background"
+                      src={aboudCard2.src}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                        opacity: 1,
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
+                  <div className="text-xs font-mono text-justify">
+                    A medicine review & feedback platform that gathers
+                    real-world insights from patients and doctors, empowering
+                    pharmaceutical companies and creating opportunities for
+                    pharmacy graduates.
+                  </div>
+                </div>
+              </button>
+            </CometCard>
+            <CometCard>
+              <button
+                type="button"
+                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                aria-label="View invite F7RA"
+                style={{
+                  transformStyle: "preserve-3d",
+                  transform: "none",
+                  opacity: 1,
+                }}
+              >
+                <div className="mx-2 flex-1">
+                  <div className="relative mt-2 aspect-[3/4] w-full">
+                    <img
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      alt="Invite background"
+                      src={aboudCard3.src}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                        opacity: 1,
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
+                  <div className="text-xs font-mono text-justify">
+                    A unified platform delivering affordable, high-quality
+                    technology training for Tier 3 students, bridging the gap
+                    between academics and employability.
+                  </div>
+                </div>
+              </button>
+            </CometCard>
+            <CometCard>
+              <button
+                type="button"
+                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                aria-label="View invite F7RA"
+                style={{
+                  transformStyle: "preserve-3d",
+                  transform: "none",
+                  opacity: 1,
+                }}
+              >
+                <div className="mx-2 flex-1">
+                  <div className="relative mt-2 aspect-[3/4] w-full">
+                    <img
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      alt="Invite background"
+                      src={aboudCard4.src}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                        opacity: 1,
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
+                  <div className="text-xs font-mono text-justify">
+                    Automobile – Society Cars: a one-stop automobile service
+                    platform for residential communities, offering trusted,
+                    verified vendors and simplified car care in a single
+                    application.
+                  </div>
+                </div>
+              </button>
+            </CometCard>
+ 
           </div>
         </section>
 
@@ -134,7 +227,7 @@ export default function AboutPage() {
           <div className="flex flex-col h-screen gap-16">
             <div className="flex flex-row items-center gap-16 px-24">
               <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] ">
-                <div >
+                <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Innovation with Purpose
                   </h2>
@@ -144,16 +237,9 @@ export default function AboutPage() {
                     that fit into people’s lives in intuitive ways.
                   </p>
                 </div>
-                {/* <img
-                src={card1.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              /> */}
               </WobbleCard>
               <WobbleCard containerClassName=" bg-[#a82673] min-h-[40px] lg:min-h-[300px] ">
-                <div >
+                <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Commitment to Quality
                   </h2>
@@ -165,18 +251,11 @@ export default function AboutPage() {
                     </p>
                   </p>
                 </div>
-                {/* <img
-                src={card2.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              /> */}
               </WobbleCard>
             </div>
             <div className="flex flex-row items-center gap-16 px-24">
               <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] flex-1">
-                <div >
+                <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Values-First Culture
                   </h2>
@@ -195,7 +274,7 @@ export default function AboutPage() {
               /> */}
               </WobbleCard>
               <WobbleCard containerClassName=" bg-[#b19011] min-h-[40px] lg:min-h-[300px] flex-1">
-                <div >
+                <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Continuous Learning
                   </h2>
@@ -246,7 +325,7 @@ export default function AboutPage() {
               existing sectors, explore new domains, and continuously evolve our
               offerings. More importantly, we’re committed to staying true to
               our values, grounded in user needs, and ambitious enough to
-              imagine better futures. We invite you to join us:  whether as a
+              imagine better futures. We invite you to join us: whether as a
               user, partner, collaborator, or supporter. Let’s reimagine what’s
               possible. Together.
             </div>

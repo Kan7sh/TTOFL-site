@@ -7,6 +7,14 @@ import banner1 from "@/assets/images/B1.png";
 import banner2 from "@/assets/images/B2.png";
 import banner3 from "@/assets/images/B3.png";
 import banner4 from "@/assets/images/B4.png";
+import banner5 from "@/assets/images/B5.png";
+import banner6 from "@/assets/images/B6.png";
+import banner7 from "@/assets/images/B7.png";
+import banner8 from "@/assets/images/B8.png";
+import banner9 from "@/assets/images/B9.png";
+import banner10 from "@/assets/images/B10.png";
+import banner11 from "@/assets/images/B11.png";
+import banner12 from "@/assets/images/B12.png";
 import Footer from "@/components/ui/footer";
 import card1 from "@/assets/images/C1.png";
 import card2 from "@/assets/images/C2.png";
@@ -95,6 +103,158 @@ const slides = [
   },
   {
     image: banner4.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner5.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner6.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner7.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner8.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner9.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner10.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner11.src,
+    content: (
+      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+          Smart Solutions
+        </div>
+        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <ul className="list-disc pl-6 text-white justify-self-start">
+          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+              About Us
+            </span>
+          </button>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    image: banner12.src,
     content: (
       <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
@@ -222,7 +382,7 @@ export default function Home() {
             <WobbleCard containerClassName=" bg-[#0] min-h-[40px] lg:min-h-[300px] ">
               <div className="max-w-xs">
                 <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Quality Matters{" "}
+                  Quality Matters
                 </h2>
                 <p className="mt-4 text-left  text-base/6 text-neutral-200">
                   We understand that quality is paramount. That's why we're
