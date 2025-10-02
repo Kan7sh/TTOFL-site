@@ -17,6 +17,10 @@ import {
 import { WobbleCard } from "@/components/ui/wobble-card";
 import Footer from "@/components/ui/footer";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import productSocietyCars1 from "@/assets/images/PSC1.png";
+import productSocietyCars2 from "@/assets/images/PSC2.png";
+import productSocietyCars3 from "@/assets/images/PSC3.png";
+import productSocietyCars4 from "@/assets/images/PSC4.png";
 
 const testimonials = [
   {
@@ -49,7 +53,6 @@ const testimonials = [
     title: "Moby-Dick",
   },
 ];
-
 
 export default function ProductsPage() {
   // QR Code component using qr-server.com API
@@ -154,78 +157,92 @@ export default function ProductsPage() {
         </div>
       </GridBeams>
 
-      <section className="py-20 px-6 text-white">
+      <section className="py-20 px-6 bg-gradient-to-r from-black via-neutral-800 to-black text-white">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-center mb-16"
+            className="text-4xl font-bold text-center mb-8"
           >
-            How It Works
+            Why Society Cars?
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-center text-lg text-gray-300 mb-16 max-w-4xl mx-auto"
+          >
+            Unlike fragmented apps offering only a single service, Society Cars
+            provides a complete ecosystem for residents and societies. From
+            daily car cleaning to service bookings and payment tracking, we
+            bring all automobile services under one roof with transparency and
+            trust.
+          </motion.p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                step: "1",
-                title: "Register / Join Society",
                 icon: Users,
+                title: "Verified Vendors",
+                description:
+                  "Society-approved service providers with secure validation processes.",
                 color: "text-blue-400",
+                bgColor: "bg-blue-500/10",
+                img: productSocietyCars1,
               },
               {
-                step: "2",
-                title: "Browse Services",
                 icon: ShoppingCart,
+                title: "One-Stop Platform",
+                description:
+                  "Car wash, maintenance, repairs, and advertisements — all in one application.",
                 color: "text-green-400",
+                bgColor: "bg-green-500/10",
+                img: productSocietyCars2,
               },
               {
-                step: "3",
-                title: "Choose Vendor & Schedule",
-                icon: Clock,
-                color: "text-yellow-400",
-              },
-              {
-                step: "4",
-                title: "Track Real-Time Updates",
                 icon: Shield,
-                color: "text-purple-400",
+                title: "Transparent Process",
+                description:
+                  "Track schedules, payments, and service history with complete clarity.",
+                color: "text-yellow-400",
+                bgColor: "bg-yellow-500/10",
+                img: productSocietyCars3,
               },
               {
-                step: "5",
-                title: "Pay Securely & Share Feedback",
-                icon: Star,
-                color: "text-pink-400",
+                icon: ShoppingCart,
+                title: "Secure Payments",
+                description:
+                  "Seamless digital transactions with no delays or withheld amounts.",
+                color: "text-red-400",
+                bgColor: "bg-red-500/10",
+                img: productSocietyCars4,
               },
-            ].map((item, index) => (
+            ].map((feature, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
+                className="bg-[#434343] rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative mb-6">
-                  <div
-                    className={`w-16 h-16 mx-auto rounded-full bg-neutral-800 border-2 border-gray-700 flex items-center justify-center mb-4`}
-                  >
-                    <item.icon className={`w-8 h-8 ${item.color}`} />
-                  </div>
-                  <div
-                    className={`absolute -top-2 -right-2 w-8 h-8 rounded-full bg-gradient-to-r from-emerald-400/90 to-emerald-800/90 flex items-center justify-center text-white font-bold text-sm`}
-                  >
-                    {item.step}
-                  </div>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <div className="w-full h-1 bg-gray-800 rounded-full">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 1, delay: index * 0.2 }}
-                    className={`h-full bg-gradient-to-r from-emerald-400/90 to-emerald-800/90 rounded-full`}
-                  />
-                </div>
+                <img
+                  loading="lazy"
+                  className="rounded-2xl w-60 mb-4 mx-auto"
+                  alt="Invite background"
+                  src={feature.img.src}
+                  style={{
+                    boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                    opacity: 1,
+                  }}
+                />
+                <h3 className="text-xl font-semibold mb-3 text-white">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {feature.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -270,16 +287,94 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-       <section >
-                <div className="font-mono mt-9 mb-15 text-3xl md:text-5xl lg:text-4xl font-extrabold text-center text-white z-10">
+      <section className="py-20 px-6 text-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-bold text-center mb-16"
+          >
+            How It Works
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {[
+              {
+                step: "1",
+                title: "Register & Join Society",
+                icon: Users,
+                color: "text-blue-400",
+              },
+              {
+                step: "2",
+                title: "Browse Services",
+                icon: ShoppingCart,
+                color: "text-green-400",
+              },
+              {
+                step: "3",
+                title: "Choose Vendor & Schedule",
+                icon: Clock,
+                color: "text-yellow-400",
+              },
+              {
+                step: "4",
+                title: "Track Realtime updates",
+                icon: Shield,
+                color: "text-purple-400",
+              },
+              {
+                step: "5",
+                title: "Secure & Share Feedback",
+                icon: Star,
+                color: "text-pink-400",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="text-center"
+              >
+                <div className="relative mb-6">
+                  <div
+                    className={`w-16 h-16 mx-auto rounded-full bg-neutral-800 border-2 border-gray-700 flex items-center justify-center mb-4`}
+                  >
+                    <item.icon className={`w-6 h-6 ${item.color}`} />
+                  </div>
+                  <div
+                    className={`absolute -top-2 -right-2 w-8 h-8 rounded-full bg-gradient-to-r from-emerald-400/90 to-emerald-800/90 flex items-center justify-center text-white font-bold text-sm`}
+                  >
+                    {item.step}
+                  </div>
+                </div>
+                <h3 className="text-md font-semibold mb-2">{item.title}</h3>
+                <div className="w-full h-1 bg-gray-800 rounded-full">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 1, delay: index * 0.2 }}
+                    className={`h-full bg-gradient-to-r from-emerald-400/90 to-emerald-800/90 rounded-full`}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="font-mono mt-9 mb-15 text-3xl md:text-5xl lg:text-4xl font-extrabold text-center text-white z-10">
           What Our Users Say
         </div>
-         <InfiniteMovingCards
-                items={testimonials}
-                direction="right"
-                speed="slow"
-                className="mb-20"
-              />
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+          className="mb-20"
+        />
       </section>
       <section className="w-full bg-gradient-to-r from-neutral-950 via-neutral-700 to-neutral-950 py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
@@ -295,8 +390,8 @@ export default function ProductsPage() {
           </button>
         </div>
       </section>
-     
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }

@@ -34,15 +34,15 @@ export default function AboutPage() {
         fill="white"
       />
       <div className="flex flex-col items-center justify-center absolute top-40">
-        <div className="font-mono top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center  text-white z-10">
+        <div className=" top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center  text-white z-10">
           ABOUT US
         </div>
-        <div className="max-w-3xl text-center mt-2 text-base md:text-lg lg:text-xl  text-emerald-400/90 z-10 px-5">
+        <div className="max-w-3xl text-center mt-2 text-base md:text-lg lg:text-2xl  text-emerald-400/90 z-10 px-5">
           Technology with Purpose, Innovation with Impact
         </div>
 
         <div className="flex flex-row gap-10 justify-between items-center p-14">
-          <div className="text-2xl w-180 text-justify text-gray-300">
+          <div className="text-xl w-180 text-justify text-gray-300">
             At TTOFL, we believe technology and innovation are not just tools,
             they are pathways to progress. Our mission is to create platforms
             that solve real-world challenges, empower graduates, support
@@ -61,7 +61,7 @@ export default function AboutPage() {
           />
         </div>
         <div className="flex flex-col p-12">
-          <div className="font-mono top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+          <div className=" top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
             Our Story
           </div>
           <div className="text-2xl w-250 text-center mt-6">
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -90,10 +90,12 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2 flex-1">
-                  <div className="relative mt-2 aspect-[3/4] w-full">
+                                    <div className="text-xl text-center ">AGRICULTURE</div>
+
+                  <div className="relative mt-2  w-full">
                     <img
                       loading="lazy"
-                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover "
                       alt="Invite background"
                       src={aboudCard1.src}
                       style={{
@@ -103,8 +105,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
-                  <div className="text-xs font-mono text-justify">
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
+                  <div className="text-md  text-justify">
                     Agriculture Connecting fresh agri-graduates with farmers to
                     boost productivity, promote organic farming, and streamline
                     logistics — creating jobs while improving farmer incomes.
@@ -115,7 +117,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -124,10 +126,11 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2 flex-1">
-                  <div className="relative mt-2 aspect-[3/4] w-full">
+                  <div className="text-xl text-center ">MEDICINE</div>
+                  <div className="relative mt-2  w-full">
                     <img
                       loading="lazy"
-                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0  rounded-[16px] bg-[#000000] object-cover "
                       alt="Invite background"
                       src={aboudCard2.src}
                       style={{
@@ -137,8 +140,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
-                  <div className="text-xs font-mono text-justify">
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
+                  <div className="text-md  text-justify">
                     A medicine review & feedback platform that gathers
                     real-world insights from patients and doctors, empowering
                     pharmaceutical companies and creating opportunities for
@@ -150,7 +153,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -159,10 +162,11 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2 flex-1">
-                  <div className="relative mt-2 aspect-[3/4] w-full">
+                  <div className="text-xl text-center ">EDUCATION</div>
+                  <div className="relative mt-2  w-full">
                     <img
                       loading="lazy"
-                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0  rounded-[16px] bg-[#000000] object-cover "
                       alt="Invite background"
                       src={aboudCard3.src}
                       style={{
@@ -172,8 +176,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
-                  <div className="text-xs font-mono text-justify">
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
+                  <div className="text-md  text-justify">
                     A unified platform delivering affordable, high-quality
                     technology training for Tier 3 students, bridging the gap
                     between academics and employability.
@@ -184,7 +188,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -193,10 +197,14 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2 flex-1">
-                  <div className="relative mt-2 aspect-[3/4] w-full">
+                    <div className="text-xl text-center ">
+                    AUTOMOBILE
+                  </div>
+                  <div className="relative mt-2  w-full">
+
                     <img
                       loading="lazy"
-                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0  rounded-[16px] bg-[#000000] object-cover "
                       alt="Invite background"
                       src={aboudCard4.src}
                       style={{
@@ -206,21 +214,20 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4 font-mono text-white">
-                  <div className="text-xs font-mono text-justify">
+                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
+                  <div className="text-md  text-justify">
                     Automobile – Society Cars: a one-stop automobile service
                     platform for residential communities, offering trusted,
-                    verified vendors and simplified car care in a single
+                    verified vendors, simplified car care in a single
                     application.
                   </div>
                 </div>
               </button>
             </CometCard>
- 
           </div>
         </section>
 
-        <div className="font-mono mt-9 mb-3 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+        <div className=" mt-9 mb-3 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
           What Drives Us?
         </div>
         <div className="py-10">
@@ -273,7 +280,7 @@ export default function AboutPage() {
                 className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
               /> */}
               </WobbleCard>
-              <WobbleCard containerClassName=" bg-[#b19011] min-h-[40px] lg:min-h-[300px] flex-1">
+              <WobbleCard containerClassName="bg-[#b19011] min-h-[40px] lg:min-h-[300px] flex-1">
                 <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Continuous Learning
@@ -295,7 +302,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="py-16 px-6 md:px-20">
-            <div className="font-mono text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+            <div className=" text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
               Why Partner with Us?
             </div>
             <div className="flex flex-row gap-10 justify-between items-center mt-6 p-14">
@@ -317,7 +324,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex flex-col p-10 items-center gap-8">
-            <div className="font-mono text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+            <div className=" text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
               Looking Forward
             </div>
             <div className="text-2xl w-250 text-center mt-6">
