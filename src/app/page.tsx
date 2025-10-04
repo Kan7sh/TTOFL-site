@@ -63,9 +63,9 @@ const slides = [
     content: (
       <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Reimagining Industries
+          Reimagining real-world challenges
         </div>
-        <div className="pb-10 text-5xl">One Smart Solution at a Time</div>
+        <div className="pb-10 text-5xl">with powerful mobile solutions</div>
         <ul className="list-disc pl-6 text-white justify-self-start">
           <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
@@ -86,6 +86,12 @@ const slides = [
         </div>
         <div className="pb-10 text-5xl">Inspired by Insight</div>
         <ul className="list-disc pl-6 text-white justify-self-start"></ul>
+        <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+            About Us
+          </span>
+        </button>
       </div>
     ),
   },
@@ -98,6 +104,12 @@ const slides = [
         </div>
         <div className="pb-10 text-5xl">with innovative solutions</div>
         <ul className="list-disc pl-6 text-white justify-self-start"></ul>
+        <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+            Know Us
+          </span>
+        </button>
       </div>
     ),
   },
@@ -108,159 +120,161 @@ const slides = [
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Smart Solutions
         </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    image: banner5.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
+        <div className="pb-10 text-5xl">
+          nurturing growth and powering a sustainable tomorrow
         </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
         <ul className="list-disc pl-6 text-white justify-self-start">
           <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
+              Explore Us
             </span>
           </button>
         </ul>
       </div>
     ),
   },
-  {
-    image: banner6.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
-        </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    image: banner7.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
-        </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    image: banner8.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
-        </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    image: banner9.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
-        </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    image: banner10.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
-        </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    image: banner11.src,
-    content: (
-      <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-        <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
-        </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-        <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-              About Us
-            </span>
-          </button>
-        </ul>
-      </div>
-    ),
-  },
+  // {
+  //   image: banner5.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   image: banner6.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   image: banner7.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   image: banner8.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   image: banner9.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   image: banner10.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   image: banner11.src,
+  //   content: (
+  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
+  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
+  //         Smart Solutions
+  //       </div>
+  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+  //       <ul className="list-disc pl-6 text-white justify-self-start">
+  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
+  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
+  //             About Us
+  //           </span>
+  //         </button>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
   {
     image: banner12.src,
     content: (
       <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-          Smart Solutions
+          Solutions that Protect
         </div>
-        <div className="pb-10 text-5xl">for Smart Tomorrow</div>
+        <div className="pb-10 text-5xl">empowers, and shapes tomorrow</div>
         <ul className="list-disc pl-6 text-white justify-self-start">
           <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
