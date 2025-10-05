@@ -7,22 +7,22 @@ import banner1 from "@/assets/images/B1.png";
 import banner2 from "@/assets/images/B2.png";
 import banner3 from "@/assets/images/B3.png";
 import banner4 from "@/assets/images/B4.png";
-import banner5 from "@/assets/images/B5.png";
-import banner6 from "@/assets/images/B6.png";
-import banner7 from "@/assets/images/B7.png";
-import banner8 from "@/assets/images/B8.png";
+import comingSoon from "@/assets/images/CS1.png";
 import banner9 from "@/assets/images/B9.png";
-import banner10 from "@/assets/images/B10.png";
-import banner11 from "@/assets/images/B11.png";
-import banner12 from "@/assets/images/B12.png";
 import Footer from "@/components/ui/footer";
 import card1 from "@/assets/images/C1.png";
 import card2 from "@/assets/images/C2.png";
 import card3 from "@/assets/images/C3.png";
 import home1 from "@/assets/images/H1.png";
+import productSocietyCars1 from "@/assets/images/PSC1.png";
+import productSocietyCars2 from "@/assets/images/PSC2.png";
+import productSocietyCars3 from "@/assets/images/PSC3.png";
+import productSocietyCars4 from "@/assets/images/PSC4.png";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Cover } from "@/components/ui/cover";
 import { WobbleCard } from "@/components/ui/wobble-card";
+import societyCarsLogo from "@/assets/images/SC1C.png";
+import { InteractiveHoverButton } from "@/components/ui/interactiveHoverButton";
 
 const testimonials = [
   {
@@ -65,9 +65,9 @@ const slides = [
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Reimagining real-world challenges
         </div>
-        <div className="pb-10 text-5xl">with powerful mobile solutions</div>
+        <div className="pb-5 text-5xl">with powerful mobile solutions</div>
         <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
               Explore Products
@@ -84,9 +84,9 @@ const slides = [
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Driven by Technology
         </div>
-        <div className="pb-10 text-5xl">Inspired by Insight</div>
+        <div className="pb-5 text-5xl">Inspired by Insight</div>
         <ul className="list-disc pl-6 text-white justify-self-start"></ul>
-        <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
             About Us
@@ -102,9 +102,9 @@ const slides = [
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Empowering Industries
         </div>
-        <div className="pb-10 text-5xl">with innovative solutions</div>
+        <div className="pb-5 text-5xl">with innovative solutions</div>
         <ul className="list-disc pl-6 text-white justify-self-start"></ul>
-        <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
             Know Us
@@ -120,11 +120,11 @@ const slides = [
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Smart Solutions
         </div>
-        <div className="pb-10 text-5xl">
+        <div className="pb-5 text-5xl">
           nurturing growth and powering a sustainable tomorrow
         </div>
         <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
               Explore Us
@@ -134,149 +134,16 @@ const slides = [
       </div>
     ),
   },
-  // {
-  //   image: banner5.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   image: banner6.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   image: banner7.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   image: banner8.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   image: banner9.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   image: banner10.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   image: banner11.src,
-  //   content: (
-  //     <div className="space-y-4 pl-10 flex flex-col items-start content-start">
-  //       <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
-  //         Smart Solutions
-  //       </div>
-  //       <div className="pb-10 text-5xl">for Smart Tomorrow</div>
-  //       <ul className="list-disc pl-6 text-white justify-self-start">
-  //         <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
-  //           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
-  //           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
-  //             About Us
-  //           </span>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
   {
-    image: banner12.src,
+    image: banner9.src,
     content: (
       <div className="space-y-4 pl-10 flex flex-col items-start content-start">
         <div className="text-emerald-400/90 text-6xl font-extrabold drop-shadow-lg ">
           Solutions that Protect
         </div>
-        <div className="pb-10 text-5xl">empowers, and shapes tomorrow</div>
+        <div className="pb-5 text-5xl">empowers, and shapes tomorrow</div>
         <ul className="list-disc pl-6 text-white justify-self-start">
-          <button className="relative inline-flex w-58 h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#02c085_0%,#393BB2_50%,#02c085_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-2xl font-medium text-white backdrop-blur-3xl">
               About Us
@@ -297,10 +164,17 @@ export default function Home() {
     setPage(([prevPage]) => [prevPage + newDirection, newDirection]);
   };
 
+  const goToSlide = (index: number) => {
+    const currentIndex = imageIndex;
+    const direction = index > currentIndex ? 1 : -1;
+    const pageDiff = index - currentIndex;
+    setPage(([prevPage]) => [prevPage + pageDiff, direction]);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       paginate(1);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -370,69 +244,90 @@ export default function Home() {
             {slides[imageIndex].content}
           </motion.h1>
         </div>
+
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex gap-3">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`transition-all duration-300 rounded-full ${
+                index === imageIndex
+                  ? "w-12 h-3 bg-emerald-400"
+                  : "w-3 h-3 bg-white/50 hover:bg-white/80"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
       <div className="pt-35 pb-28">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col-reverse gap-10">
           <div className="flex flex-row items-center gap-10 px-10">
-            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] ">
-              <div className="max-w-xs">
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Innovation at its Best
-                </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                  Our team of tech-savvy individuals is driven by innovation,
-                  devoted to making your life easier and more efficient, and
-                  committed to creating top-tier mobile applications for you.
-                </p>
+            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[340px] lg:max-h-[340px] ">
+              <div className="flex flex-row gap-10">
+                <div className="max-w-xs">
+                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                    Innovation at its Best
+                  </h2>
+                  <p className="mt-4 text-justify  text-base/6 text-neutral-200">
+                    Our team of tech-savvy individuals is driven by innovation,
+                    devoted to making your life easier and more efficient, and
+                    committed to creating top-tier mobile applications for you.
+                  </p>
+                </div>
+                <img
+                  src={card1.src}
+                  width={280}
+                  height={400}
+                  alt="linear demo image"
+                  className=" grayscale filter object-contain rounded-2xl"
+                />
               </div>
-              <img
-                src={card1.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              />
             </WobbleCard>
-            <WobbleCard containerClassName=" bg-[#0] min-h-[40px] lg:min-h-[300px] ">
-              <div className="max-w-xs">
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Quality Matters
-                </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                  We understand that quality is paramount. That's why we're
-                  devoted to providing you with a top-tier mobile application,
-                  crafted with precision and care.
-                </p>
+            <WobbleCard containerClassName=" bg-[#0] min-h-[40px] lg:min-h-[340px] lg:max-h-[340px]">
+              <div className="flex flex-row gap-10">
+                <div className="max-w-xs">
+                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                    Quality Matters
+                  </h2>
+                  <p className="mt-4 text-justify  text-base/6 text-neutral-200">
+                    We understand that quality is paramount. That's why we're
+                    devoted to providing you with a top-tier mobile application,
+                    crafted with precision and care.
+                  </p>
+                </div>
+                <img
+                  src={card2.src}
+                  width={250}
+                  height={200}
+                  alt="linear demo image"
+                  className=" l grayscale filter  object-contain rounded-2xl"
+                />
               </div>
-              <img
-                src={card2.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              />
             </WobbleCard>
           </div>
           <div className="flex flex-row-reverse items-center px-10">
-            <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] flex-1">
-              <div className="max-w-xs">
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Our Promise
-                </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                  At TTOFL, we're not just creating apps; we're crafting
-                  experiences. Experiences that will make your life easier, more
-                  enjoyable, and more rewarding, all while contributing to a
-                  better society.
-                </p>
+            <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[340px] lg:max-h-[340px] flex-1">
+              <div className="flex flex-row gap-10">
+                <div className="max-w-xs">
+                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                    Our Promise
+                  </h2>
+                  <p className="mt-4 text-justify  text-base/6 text-neutral-200">
+                    At TTOFL, we're not just creating apps; we're crafting
+                    experiences. Experiences that will make your life easier,
+                    more enjoyable, and more rewarding, all while contributing
+                    to a better society.
+                  </p>
+                </div>
+                <img
+                  src={card3.src}
+                  width={250}
+                  height={200}
+                  alt="linear demo image"
+                  className="  grayscale filter  object-contain rounded-2xl"
+                />
               </div>
-              <img
-                src={card3.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              />
             </WobbleCard>
             <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white flex-1 p-5">
               Building amazing Products <br />
@@ -445,12 +340,89 @@ export default function Home() {
         <img src={home1.src} alt="linear demo image" className="" />
       </div>
 
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-        className="mb-20"
-      />
+      <section className="py-20 px-25 bg-gradient-to-b from-black via-neutral-800 to-black text-white">
+        <div className=" mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-bold text-center mb-10"
+          >
+            OUR PRODUCTS
+          </motion.h2>
+
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Society Cars",
+                description:
+                  "Society-approved service providers with secure validation processes.",
+                img: societyCarsLogo,
+                btnTxt: "Explore now",
+              },
+              {
+                title: "EduBridgeX",
+                description:
+                  "Unified, affordable tech training platform for Tier 3 students.",
+                img: comingSoon,
+                btnTxt: "Coming soon",
+              },
+              {
+                title: "AgriConnect",
+                description:
+                  "Connecting agri-graduates with farmers to promote organic farming and logistics support.",
+                img: comingSoon,
+                btnTxt: "Coming soon",
+              },
+              {
+                title: "MediReview",
+                description:
+                  "Medicine review & feedback platform enabling transparency in pharma.",
+                img: comingSoon,
+                btnTxt: "Coming soon",
+              },
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-[#01192558] border-white/20 border-1 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col"
+              >
+                <div className="flex-shrink-0 h-35 flex items-center justify-center mb-4">
+                  <img
+                    loading="lazy"
+                    className="rounded-2xl w-35 mx-auto"
+                    alt="Invite background"
+                    src={feature.img.src}
+                    style={{
+                      boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                      opacity: 1,
+                    }}
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-white h-14 flex items-center justify-center">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
+                  {feature.description}
+                </p>
+                <div className="mt-auto">
+                  <InteractiveHoverButton
+                    className={`w-40 rounded-xl h-11 ${
+                      feature.btnTxt === "Coming soon"
+                        ? "bg-gray-400"
+                        : "bg-emerald-400/90"
+                    } border-none text-white`}
+                  >
+                    {feature.btnTxt}
+                  </InteractiveHoverButton>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );
