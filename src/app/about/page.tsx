@@ -42,7 +42,7 @@ export default function AboutPage() {
         </div>
 
         <div className="flex flex-row gap-10 justify-between items-center p-14">
-          <div className="text-xl w-180 text-justify text-gray-300">
+          <div className="text-xl w-180 text-justify text-white/80">
             At TTOFL, we believe technology and innovation are not just tools,
             they are pathways to progress. Our mission is to create platforms
             that solve real-world challenges, empower graduates, support
@@ -64,7 +64,7 @@ export default function AboutPage() {
           <div className=" top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
             Our Story
           </div>
-          <div className="text-2xl w-250 text-center mt-6">
+          <div className="text-xl text-white/80 w-250 text-center mt-6">
             TTOFL was founded with a vision: to bridge gaps in critical sectors
             where technology can make a difference. We saw opportunities to
             empower skilled graduates, improve livelihoods for farmers, bring
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex h-120 w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -89,13 +89,15 @@ export default function AboutPage() {
                   opacity: 1,
                 }}
               >
-                <div className="mx-2 flex-1">
-                                    <div className="text-xl text-center ">AGRICULTURE</div>
+                <div className="mx-2">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                    AGRICULTURE
+                  </div>
 
-                  <div className="relative mt-2  w-full">
+                  <div className="relative w-full h-48 mb-4">
                     <img
                       loading="lazy"
-                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
                       alt="Invite background"
                       src={aboudCard1.src}
                       style={{
@@ -105,8 +107,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
-                  <div className="text-md  text-justify">
+                <div className="flex flex-shrink-0 items-start p-4 text-white">
+                  <div className="text-md text-justify">
                     Agriculture Connecting fresh agri-graduates with farmers to
                     boost productivity, promote organic farming, and streamline
                     logistics — creating jobs while improving farmer incomes.
@@ -117,7 +119,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex h-120 w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -125,12 +127,15 @@ export default function AboutPage() {
                   opacity: 1,
                 }}
               >
-                <div className="mx-2 flex-1">
-                  <div className="text-xl text-center ">MEDICINE</div>
-                  <div className="relative mt-2  w-full">
+                <div className="mx-2">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                    MEDICINE
+                  </div>
+
+                  <div className="relative w-full h-48 mb-4">
                     <img
                       loading="lazy"
-                      className="absolute inset-0  rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
                       alt="Invite background"
                       src={aboudCard2.src}
                       style={{
@@ -140,11 +145,11 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
-                  <div className="text-md  text-justify">
+                <div className="flex flex-shrink-0 items-start p-4 text-white">
+                  <div className="text-md text-justify">
                     A medicine review & feedback platform that gathers
                     real-world insights from patients and doctors, empowering
-                    pharmaceutical companies and creating opportunities for
+                     companies and creating opportunities for
                     pharmacy graduates.
                   </div>
                 </div>
@@ -153,7 +158,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 h-120 flex w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -161,12 +166,15 @@ export default function AboutPage() {
                   opacity: 1,
                 }}
               >
-                <div className="mx-2 flex-1">
-                  <div className="text-xl text-center ">EDUCATION</div>
-                  <div className="relative mt-2  w-full">
+                <div className="mx-2">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                    EDUCATION
+                  </div>
+
+                  <div className="relative w-full h-48 mb-4">
                     <img
                       loading="lazy"
-                      className="absolute inset-0  rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
                       alt="Invite background"
                       src={aboudCard3.src}
                       style={{
@@ -176,8 +184,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
-                  <div className="text-md  text-justify">
+                <div className="flex flex-shrink-0 items-start p-4 text-white">
+                  <div className="text-md text-justify">
                     A unified platform delivering affordable, high-quality
                     technology training for Tier 3 students, bridging the gap
                     between academics and employability.
@@ -188,7 +196,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 h-110 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-10 flex w-80 h-120 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -196,15 +204,15 @@ export default function AboutPage() {
                   opacity: 1,
                 }}
               >
-                <div className="mx-2 flex-1">
-                    <div className="text-xl text-center ">
+                <div className="mx-2">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
                     AUTOMOBILE
                   </div>
-                  <div className="relative mt-2  w-full">
 
+                  <div className="relative w-full h-48 mb-4">
                     <img
                       loading="lazy"
-                      className="absolute inset-0  rounded-[16px] bg-[#000000] object-cover "
+                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
                       alt="Invite background"
                       src={aboudCard4.src}
                       style={{
@@ -214,8 +222,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="mt-2 flex flex-shrink-0 items-center justify-between p-4  text-white">
-                  <div className="text-md  text-justify">
+                <div className="flex flex-shrink-0 items-start p-4 text-white">
+                  <div className="text-md text-justify">
                     Automobile – Society Cars: a one-stop automobile service
                     platform for residential communities, offering trusted,
                     verified vendors, simplified car care in a single
@@ -240,7 +248,7 @@ export default function AboutPage() {
                   </h2>
                   <p className="mt-4 text-left  text-base/6 text-neutral-200">
                     We don’t innovate for innovation's sake. We explore smart,
-                    user-centered solutions ones that solve real problems, and
+                    user-centered solutions that solve  problems, and
                     that fit into people’s lives in intuitive ways.
                   </p>
                 </div>
@@ -312,7 +320,7 @@ export default function AboutPage() {
                 alt="linear demo image"
                 className="   rounded-2xl"
               />
-              <div className="text-2xl w-180 text-justify mt-6">
+              <div className="text-xl text-white/80 w-180 text-justify mt-6">
                 If you’re: A community leader, educator, or health professional
                 wanting better tools to serve people A business seeking
                 tech-driven solutions aligned with social good An investor or
@@ -327,7 +335,7 @@ export default function AboutPage() {
             <div className=" text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
               Looking Forward
             </div>
-            <div className="text-2xl w-250 text-center mt-6">
+            <div className="text-xl text-white/80 w-250 text-center mt-6">
               The road ahead is exciting. We plan to deepen our impact in
               existing sectors, explore new domains, and continuously evolve our
               offerings. More importantly, we’re committed to staying true to

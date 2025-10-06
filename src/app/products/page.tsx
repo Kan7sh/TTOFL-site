@@ -21,6 +21,7 @@ import productSocietyCars1 from "@/assets/images/PSC1.png";
 import productSocietyCars2 from "@/assets/images/PSC2.png";
 import productSocietyCars3 from "@/assets/images/PSC3.png";
 import productSocietyCars4 from "@/assets/images/PSC4.png";
+import societyCarsBanner from "@/assets/images/SCM1.png";
 
 const testimonials = [
   {
@@ -95,7 +96,7 @@ export default function ProductsPage() {
       >
         <div className="flex-1 flex items-center justify-center px-6 pt-32">
           <div className="max-w-6xl mx-auto text-center">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-3 mb-12">
               <img
                 src={societyCarsLogo.src}
                 width={130}
@@ -112,7 +113,7 @@ export default function ProductsPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12">
               <div className="text-left">
                 <h2 className="text-3xl font-bold mb-6">
                   See Society Cars in Action
@@ -143,21 +144,22 @@ export default function ProductsPage() {
               </div>
 
               <div className="relative">
-                <motion.div
+                <img src={societyCarsBanner.src} alt="Society Cars Banner" />
+                {/* <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                   className="aspect-video h-100 bg-black rounded-2xl flex items-center justify-center shadow-lg border border-gray-800"
                 >
                   <Video className="w-16 h-16 text-white" />
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
           </div>
         </div>
       </GridBeams>
 
-      <section className="py-20 px-6 bg-gradient-to-r from-black via-neutral-800 to-black text-white">
+      <section className="py-20 px-6 bg-gradient-to-r from-[#00000000] via-neutral-800 to-[#00000000] text-white">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

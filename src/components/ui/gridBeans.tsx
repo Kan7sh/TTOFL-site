@@ -144,7 +144,7 @@ export const GridBeams: React.FC<GridBeamsProps> = ({
   return (
     <div
       className={cn(
-        "relative overflow-hidden bg-[var(--bg-color)] bg-[radial-gradient(ellipse_at_50%_-20%,#1a2c5a,transparent_70%)]",
+        "relative overflow-hidden bg-[var(--bg-color)] bg-[radial-gradient(ellipse_at_50%_-20%,#9b3600,transparent_70%)]",
         className
       )}
       style={
