@@ -78,10 +78,6 @@ export default function ProductsPage() {
       </div>
       <div className="text-center">
         <p className="text-sm font-medium text-gray-300">{label}</p>
-        {/* <div className="flex items-center justify-center mt-1 text-xs text-gray-400">
-          <Download className="w-3 h-3 mr-1" />
-          {type}
-        </div> */}
       </div>
     </div>
   );
@@ -92,8 +88,9 @@ export default function ProductsPage() {
 
       <GridBeams
         className="w-full min-h-screen flex flex-col"
-        backgroundColor="#020412"
       >
+        <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
+
         <div className="flex-1 flex items-center justify-center px-6 pt-32">
           <div className="max-w-6xl mx-auto text-center">
             <div className="flex flex-col md:flex-row justify-center items-center gap-3 mb-12">
@@ -159,7 +156,7 @@ export default function ProductsPage() {
         </div>
       </GridBeams>
 
-      <section className="py-20 px-6 bg-gradient-to-r from-[#00000000] via-neutral-800 to-[#00000000] text-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-[#000000] via-neutral-800 to-[#00000000] text-white -mt-16">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

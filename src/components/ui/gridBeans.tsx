@@ -120,14 +120,14 @@ export const GridBeams: React.FC<GridBeamsProps> = ({
   children,
   className,
   gridSize = 40,
-  gridColor = "rgba(200, 220, 255, 0.2)",
+  gridColor = "rgba(255, 255, 255, 0.2)",
   rayCount = 15,
   rayOpacity = 0.35,
   raySpeed = 1,
   rayLength = "45vh",
   gridFadeStart = 30,
   gridFadeEnd = 90,
-  backgroundColor = "#020412",
+  backgroundColor = "#000000",
   ...props
 }) => {
   const rayConfigs = useMemo(() => {
@@ -144,7 +144,7 @@ export const GridBeams: React.FC<GridBeamsProps> = ({
   return (
     <div
       className={cn(
-        "relative overflow-hidden bg-[var(--bg-color)] bg-[radial-gradient(ellipse_at_50%_-20%,#9b3600,transparent_70%)]",
+        "relative overflow-hidden bg-[var(--bg-color)] bg-[radial-gradient(ellipse_at_50%_-20%,#1a2c5a,transparent_70%)]",
         className
       )}
       style={
