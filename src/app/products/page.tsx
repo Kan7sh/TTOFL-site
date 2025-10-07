@@ -21,6 +21,8 @@ import productSocietyCars1 from "@/assets/images/PSC1.png";
 import productSocietyCars2 from "@/assets/images/PSC2.png";
 import productSocietyCars3 from "@/assets/images/PSC3.png";
 import productSocietyCars4 from "@/assets/images/PSC4.png";
+import productCardImg1 from "@/assets/images/PC1.png";
+import productCardImg2 from "@/assets/images/PC2.png";
 import societyCarsBanner from "@/assets/images/SCM1.png";
 
 const testimonials = [
@@ -56,7 +58,6 @@ const testimonials = [
 ];
 
 export default function ProductsPage() {
-  // QR Code component using qr-server.com API
   const QRCode = ({
     url,
     label,
@@ -86,9 +87,7 @@ export default function ProductsPage() {
     <div className="relative w-full min-h-screen bg-neutral-950 text-white">
       <GlassmorphNavBar />
 
-      <GridBeams
-        className="w-full min-h-screen flex flex-col"
-      >
+      <GridBeams className="w-full min-h-screen flex flex-col">
         <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
 
         <div className="flex-1 flex items-center justify-center px-6 pt-32">
@@ -253,34 +252,61 @@ export default function ProductsPage() {
         </div>
         <div className="flex flex-col  gap-16">
           <div className="flex flex-row items-center gap-16 px-24">
-            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] ">
-              <div>
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  For Residents
-                </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                  <ul>
-                    <li> • Convenient booking for all car services</li>
-                    <li> • Transparent pricing and trusted providers</li>
-                    <li> • Time-saving with scheduled and tracked services</li>
-                    <li> • Hassle-free secure payments and receipts</li>
-                  </ul>
-                </p>
+            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] h-[330px]">
+              <div className="flex flex-row">
+                <div>
+                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                    For Residents
+                  </h2>
+                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                    <ul>
+                      <li> • Convenient booking for all car services</li>
+                      <li> • Transparent pricing and trusted providers</li>
+                      <li>
+                        {" "}
+                        • Time-saving with scheduled and tracked services
+                      </li>
+                      <li> • Hassle-free secure payments and receipts</li>
+                    </ul>
+                  </p>
+                </div>
+                <img
+                  loading="lazy"
+                  className="rounded-2xl w-40 h-40 object-cover mb-4 mx-auto"
+                  alt="Invite background"
+                  src={productCardImg1.src}
+                  style={{
+                    boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                    opacity: 1,
+                  }}
+                />
               </div>
             </WobbleCard>
-            <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] ">
-              <div>
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  For Vendors
-                </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                  <ul>
-                    <li> • Verified leads from trusted communities</li>
-                    <li> • Guaranteed, timely digital payments</li>
-                    <li> • Opportunity to upsell services and accessories</li>
-                    <li> • Reputation growth within residential societies</li>
-                  </ul>
-                </p>
+            <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] h-[330px]">
+              <div className="flex flex-row">
+                <div>
+                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                    For Vendors
+                  </h2>
+                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                    <ul>
+                      <li> • Verified leads from trusted communities</li>
+                      <li> • Guaranteed, timely digital payments</li>
+                      <li> • Opportunity to upsell services and accessories</li>
+                      <li> • Reputation growth within residential societies</li>
+                    </ul>
+                  </p>
+                </div>
+                <img
+                  loading="lazy"
+                  className="rounded-2xl w-40 h-40 object-cover mb-4 mx-auto"
+                  alt="Invite background"
+                  src={productCardImg2.src}
+                  style={{
+                    boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                    opacity: 1,
+                  }}
+                />
               </div>
             </WobbleCard>
           </div>
