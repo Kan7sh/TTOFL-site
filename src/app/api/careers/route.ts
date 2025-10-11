@@ -26,8 +26,8 @@ export async function POST(request: NextRequest) {
     const buffer = Buffer.from(bytes);
 
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT || 587,
+      host: "smtp.office365.com",
+      port: 587,
       secure: false,
       auth: {
         user: process.env.SMTP_CONTACT_USER,
@@ -44,7 +44,6 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: process.env.SMTP_CONTACT_USER,
       to: process.env.SMTP_INFO_SEND_TO_USER,
-      replyTo: email,
       subject: `New Career Application from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -92,14 +91,11 @@ Reply to: ${email}
       ],
     };
 
-    const info = await transporter.sendMail(mailOptions);
-
-    console.log("Career application email sent:", info.messageId);
+    await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
       {
         message: "Application submitted successfully",
-        messageId: info.messageId,
       },
       { status: 200 }
     );
