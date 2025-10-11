@@ -8,7 +8,6 @@ export async function POST(request: NextRequest) {
     const email = formData.get("email");
     const resume = formData.get("resume");
 
-    // Validate input
     if (!name || !email || !resume) {
       return NextResponse.json(
         { error: "All fields are required" },
@@ -16,7 +15,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate file
     if (!resume || !(resume instanceof File)) {
       return NextResponse.json(
         { error: "Please upload a valid resume file" },
@@ -24,14 +22,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Convert file to buffer
     const bytes = await resume.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    // Create transporter for Microsoft/Outlook
     const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
-      port: 587,
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT || 587,
       secure: false,
       auth: {
         user: process.env.SMTP_CONTACT_USER,
@@ -43,10 +39,8 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    // Verify connection
     await transporter.verify();
 
-    // Email content
     const mailOptions = {
       from: process.env.SMTP_CONTACT_USER,
       to: process.env.SMTP_INFO_SEND_TO_USER,
@@ -98,7 +92,6 @@ Reply to: ${email}
       ],
     };
 
-    // Send email
     const info = await transporter.sendMail(mailOptions);
 
     console.log("Career application email sent:", info.messageId);
@@ -113,7 +106,6 @@ Reply to: ${email}
   } catch (error) {
     console.error("Email send error:", error);
 
-    // Provide more specific error messages
     let errorMessage = "Failed to submit application";
     if (
       typeof error === "object" &&
@@ -139,7 +131,6 @@ Reply to: ${email}
   }
 }
 
-// Configure API route to handle file uploads
 export const config = {
   api: {
     bodyParser: false,
