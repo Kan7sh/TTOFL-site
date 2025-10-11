@@ -4,10 +4,11 @@ import { Input } from "@/components/ui/input";
 import { InteractiveHoverButton } from "@/components/ui/interactiveHoverButton";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Textarea } from "@/components/ui/textarea";
-import contact1 from "@/assets/images/CU1.png";
 import { cn } from "@/lib/utils";
+import career1 from "@/assets/images/CR1.png";
+import { Label } from "@radix-ui/react-label";
 
-export default function ContactPage() {
+export default function CareersPage() {
   return (
     <div className="relative flex h-[50rem] w-full items-center justify-center bg-neutral-950">
       <div
@@ -24,11 +25,10 @@ export default function ContactPage() {
         fill="white"
       />
       <div className="flex flex-col  items-center justify-center absolute top-50 gap-5">
-        <div className="flex flex-row kustify-between gap-20">
+        <div className="flex flex-row-reverse items-center gap-20">
           <div className="flex flex-col gap-5">
             <div className="text-2xl md:text-3xl lg:text-4xl w-160 font-extrabold  text-white z-100">
-              Got an idea, feedback, or just want to say hi? Our inbox is always
-              open
+                Want to Join our creative team? 
             </div>
             <Input
               type="Name"
@@ -41,20 +41,25 @@ export default function ContactPage() {
               placeholder="Email"
               className="bg-neutral-800 h-12 w-140 border-gray-500"
             />
-            <Textarea
-              placeholder="Type your message here."
-              className="bg-neutral-800 h-30 w-140 border-gray-500"
-            />
+            <div>
+              <Label htmlFor="picture" className="text-[#7e7e7f]">Resume</Label>
+              <Input
+                id="picture"
+                type="file"
+                className="bg-neutral-800 w-140 border-gray-500 justify-center text-[#7e7e7f] align-centerself center"
+              />
+            </div>
+
             <InteractiveHoverButton className="w-140 rounded-xl h-10 bg-emerald-400/90 border-none text-white ">
-              Get In Touch
+              Sumbit
             </InteractiveHoverButton>
           </div>
-            <img
-                src={contact1.src}
-                width={650}
-                alt="linear demo image"
-                className="grayscale   rounded-2xl"
-              />
+          <img
+            src={career1.src}
+            width={650}
+            alt="linear demo image"
+            className="rounded-2xl"
+          />
         </div>
 
         <div className="w-full mt-15">

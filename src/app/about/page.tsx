@@ -18,13 +18,12 @@ import { CometCard } from "@/components/ui/comet-card";
 
 export default function AboutPage() {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-neutral-950">
+    <div className="relative flex h-[50rem] w-full items-center justify-center bg-gradient-to-t from-[#020303] to-transparent">
       <div
         className={cn(
           "absolute inset-0",
           "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+          "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
@@ -60,8 +59,8 @@ export default function AboutPage() {
             className="rounded-2xl"
           />
         </div>
-        <div className="flex flex-col p-12">
-          <div className=" top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+        <div className="bg-gradient-to-t from-[#020303] to-transparent flex flex-col p-12">
+          <div className="  text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
             Our Story
           </div>
           <div className="text-xl text-white/80 w-250 text-center mt-6">
@@ -149,8 +148,7 @@ export default function AboutPage() {
                   <div className="text-md text-justify">
                     A medicine review & feedback platform that gathers
                     real-world insights from patients and doctors, empowering
-                     companies and creating opportunities for
-                    pharmacy graduates.
+                    companies and creating opportunities for pharmacy graduates.
                   </div>
                 </div>
               </button>
@@ -248,8 +246,8 @@ export default function AboutPage() {
                   </h2>
                   <p className="mt-4 text-left  text-base/6 text-neutral-200">
                     We don’t innovate for innovation's sake. We explore smart,
-                    user-centered solutions that solve  problems, and
-                    that fit into people’s lives in intuitive ways.
+                    user-centered solutions that solve problems, and that fit
+                    into people’s lives in intuitive ways.
                   </p>
                 </div>
               </WobbleCard>

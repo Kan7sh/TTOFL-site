@@ -16,7 +16,7 @@ export default function GlassmorphNavBar() {
     >
       <div className="flex justify-between items-center w-full">
         <div className="flex items-center gap-2">
-          <Image src={ttoflLogo} alt={"logo"} className="w-38" />
+          <Image src={ttoflLogo} alt={"logo"} className=" w-25 lg:w-38" />
           <div className="hidden gap-4 md:flex"></div>
         </div>
         <div className="hidden md:block">
@@ -47,6 +47,7 @@ export default function GlassmorphNavBar() {
           <Link href="/"> Home</Link>
           <Link href="/about">About</Link>
           <Link href="/products">Products</Link>
+          <Link href="/products">Contact Us</Link>
         </div>
       )}
     </nav>
