@@ -18,7 +18,7 @@ import { CometCard } from "@/components/ui/comet-card";
 
 export default function AboutPage() {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-gradient-to-t from-[#020303] to-transparent">
+    <div className="relative flex min-h-screen w-full items-center justify-center bg-gradient-to-t from-[#020303] to-transparent">
       <div
         className={cn(
           "absolute inset-0",
@@ -26,61 +26,61 @@ export default function AboutPage() {
           "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
       />
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
       <GlassmorphNavBar />
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-      <div className="flex flex-col items-center justify-center absolute top-40">
-        <div className=" top-32 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center  text-white z-10">
+      <div className="flex flex-col w-full items-center justify-center absolute top-24 md:top-40 px-4">
+        <div className="top-32 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10 px-4">
           ABOUT US
         </div>
-        <div className="max-w-3xl text-center mt-2 text-base md:text-lg lg:text-2xl  text-emerald-400/90 z-10 px-5">
+        <div className="max-w-3xl text-center mt-2 text-sm sm:text-base md:text-lg lg:text-2xl text-emerald-400/90 z-10 px-5">
           Technology with Purpose, Innovation with Impact
         </div>
 
-        <div className="flex flex-row gap-10 justify-between items-center p-14">
-          <div className="text-xl w-180 text-justify text-white/80">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-10 justify-between items-center p-6 md:p-14 w-full max-w-7xl">
+          <div className="text-base sm:text-lg md:text-xl w-full md:w-180 text-justify text-white/80 order-2 md:order-1">
             At TTOFL, we believe technology and innovation are not just tools,
             they are pathways to progress. Our mission is to create platforms
             that solve real-world challenges, empower graduates, support
             businesses, and deliver meaningful impact across key industries.
-            We’re building solutions at the intersection of technology,
+            We're building solutions at the intersection of technology,
             sustainability, and social good, focusing on Agriculture,
             Healthcare, Education, and Auto Care. Each initiative is designed to
-            improve lives, generate employment, and create long-term value
-            for communities.
+            improve lives, generate employment, and create long-term value for
+            communities.
           </div>
           <img
             src={about1.src}
             width={480}
             alt="linear demo image"
-            className="rounded-2xl"
+            className="rounded-2xl w-full md:w-auto max-w-md order-1 md:order-2"
           />
         </div>
-        <div className="bg-gradient-to-t from-[#020303] to-transparent flex flex-col p-12">
-          <div className="  text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+        <div className="bg-gradient-to-t from-[#020303] to-transparent flex flex-col p-6 md:p-12 w-full">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10 px-4">
             Our Story
           </div>
-          <div className="text-xl text-white/80 w-250 text-center mt-6">
+          <div className="text-base sm:text-lg md:text-xl text-white/80 w-full max-w-5xl mx-auto text-center mt-6 px-4">
             TTOFL was founded with a vision: to bridge gaps in critical sectors
             where technology can make a difference. We saw opportunities to
             empower skilled graduates, improve livelihoods for farmers, bring
             transparency to healthcare, and make education more accessible. From
             ideation to execution, our journey has always been about one thing,
-            building human-centered innovation.
+            building human-centered innovation.
           </div>
         </div>
-        <section className="py-8 px-6 md:px-20">
-          <h2 className="text-4xl font-bold mb-2 text-center text-emerald-400/90">
+        <section className="py-8 px-4 md:px-6 lg:px-10 w-full">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-2 text-center text-emerald-400/90 px-4">
             Our Areas of Focus
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 px-7">
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex h-120 w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-6 md:my-10 flex h-auto md:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -89,11 +89,11 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2">
-                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
                     AGRICULTURE
                   </div>
 
-                  <div className="relative w-full h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -106,8 +106,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-4 text-white">
-                  <div className="text-md text-justify">
+                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
+                  <div className="text-sm sm:text-md text-justify">
                     Agriculture Connecting fresh agri-graduates with farmers to
                     boost productivity, promote organic farming, and streamline
                     logistics — creating jobs while improving farmer incomes.
@@ -118,7 +118,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex h-120 w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-6 md:my-10 flex h-auto md:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -127,11 +127,11 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2">
-                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
                     MEDICINE
                   </div>
 
-                  <div className="relative w-full h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -144,8 +144,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-4 text-white">
-                  <div className="text-md text-justify">
+                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
+                  <div className="text-sm sm:text-md text-justify">
                     A medicine review & feedback platform that gathers
                     real-world insights from patients and doctors, empowering
                     companies and creating opportunities for pharmacy graduates.
@@ -156,7 +156,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 h-120 flex w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-6 md:my-10 h-auto md:h-120 flex w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -165,11 +165,11 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2">
-                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
                     EDUCATION
                   </div>
 
-                  <div className="relative w-full h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -182,8 +182,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-4 text-white">
-                  <div className="text-md text-justify">
+                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
+                  <div className="text-sm sm:text-md text-justify">
                     A unified platform delivering affordable, high-quality
                     technology training for Tier 3 students, bridging the gap
                     between academics and employability.
@@ -194,7 +194,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-10 flex w-80 h-120 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-2  md:my-20 md:p-4"
+                className="my-6 md:my-10 flex w-full sm:w-80 h-auto md:h-120 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -203,11 +203,11 @@ export default function AboutPage() {
                 }}
               >
                 <div className="mx-2">
-                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
+                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
                     AUTOMOBILE
                   </div>
 
-                  <div className="relative w-full h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -220,8 +220,8 @@ export default function AboutPage() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-4 text-white">
-                  <div className="text-md text-justify">
+                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
+                  <div className="text-sm sm:text-md text-justify">
                     Automobile – Society Cars: a one-stop automobile service
                     platform for residential communities, offering trusted,
                     verified vendors, simplified car care in a single
@@ -233,120 +233,104 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <div className=" mt-9 mb-3 text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+        <div className="mt-9 mb-3 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10 px-4">
           What Drives Us?
         </div>
-        <div className="py-10">
-          <div className="flex flex-col h-screen gap-16">
-            <div className="flex flex-row items-center gap-16 px-24">
-              <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] ">
+        <div className="py-6 md:py-10 w-full">
+          <div className="flex flex-col gap-8 md:gap-16">
+            <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-16 px-4 md:px-12 lg:px-24">
+              <WobbleCard containerClassName="bg-emerald-900/90 min-h-[200px] lg:min-h-[300px] w-full">
                 <div>
-                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <h2 className="text-left text-balance text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Innovation with Purpose
                   </h2>
-                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                    We don’t innovate for innovation's sake. We explore smart,
+                  <p className="mt-4 text-left text-sm sm:text-base text-neutral-200">
+                    We don't innovate for innovation's sake. We explore smart,
                     user-centered solutions that solve problems, and that fit
-                    into people’s lives in intuitive ways.
+                    into people's lives in intuitive ways.
                   </p>
                 </div>
               </WobbleCard>
-              <WobbleCard containerClassName=" bg-[#a82673] min-h-[40px] lg:min-h-[300px] ">
+              <WobbleCard containerClassName="bg-[#a82673] min-h-[200px] lg:min-h-[300px] w-full">
                 <div>
-                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <h2 className="text-left text-balance text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Commitment to Quality
                   </h2>
-                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                    <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                      From design to deployment, we obsess over detail.
-                      Usability, performance, reliability, we hold ourselves to
-                      high standards so our users can depend on us.
-                    </p>
+                  <p className="mt-4 text-left text-sm sm:text-base text-neutral-200">
+                    From design to deployment, we obsess over detail. Usability,
+                    performance, reliability, we hold ourselves to high
+                    standards so our users can depend on us.
                   </p>
                 </div>
               </WobbleCard>
             </div>
-            <div className="flex flex-row items-center gap-16 px-24">
-              <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] flex-1">
+            <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-16 px-4 md:px-12 lg:px-24">
+              <WobbleCard containerClassName="bg-[#005099] min-h-[200px] lg:min-h-[300px] flex-1 w-full">
                 <div>
-                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <h2 className="text-left text-balance text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Values-First Culture
                   </h2>
-                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                    Integrity. Empathy. Transparency. Innovation. These aren’t
+                  <p className="mt-4 text-left text-sm sm:text-base text-neutral-200">
+                    Integrity. Empathy. Transparency. Innovation. These aren't
                     just some fancy words. Its our commitment. They guide how we
                     build, collaborate, and grow.
                   </p>
                 </div>
-                {/* <img
-                src={card3.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              /> */}
               </WobbleCard>
-              <WobbleCard containerClassName="bg-[#b19011] min-h-[40px] lg:min-h-[300px] flex-1">
+              <WobbleCard containerClassName="bg-[#b19011] min-h-[200px] lg:min-h-[300px] flex-1 w-full">
                 <div>
-                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <h2 className="text-left text-balance text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Continuous Learning
                   </h2>
-                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                  <p className="mt-4 text-left text-sm sm:text-base text-neutral-200">
                     We stay curious. We listen to our users, study trends,
                     embrace feedback, and iterate quickly. Because the future
                     moves fast and so do we.
                   </p>
                 </div>
-                {/* <img
-                src={card3.src}
-                width={500}
-                height={500}
-                alt="linear demo image"
-                className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-              /> */}
               </WobbleCard>
             </div>
           </div>
-          <div className="py-16 px-6 md:px-20">
-            <div className=" text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+          <div className="py-8 md:py-16 px-4 md:px-6 lg:px-20">
+            <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10 px-4">
               Why Partner with Us?
             </div>
-            <div className="flex flex-row gap-10 justify-between items-center mt-6 p-14">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-10 justify-between items-center mt-6 p-4 md:p-14 w-full max-w-7xl mx-auto">
               <img
                 src={about2.src}
                 width={480}
                 alt="linear demo image"
-                className="   rounded-2xl"
+                className="rounded-2xl w-full md:w-auto max-w-md"
               />
-              <div className="text-xl text-white/80 w-180 text-justify mt-6">
-                If you’re: A community leader, educator, or health professional
+              <div className="text-base sm:text-lg md:text-xl text-white/80 w-full md:w-180 text-justify mt-6">
+                If you're: A community leader, educator, or health professional
                 wanting better tools to serve people A business seeking
                 tech-driven solutions aligned with social good An investor or
-                stakeholder interested in meaningful innovation Then we’d love
-                to work with you. We’re open to partnerships, collaborations,
+                stakeholder interested in meaningful innovation Then we'd love
+                to work with you. We're open to partnerships, collaborations,
                 and co-creating solutions. Together, we can build smarter, more
-                compassionate, more accessible products.
+                compassionate, more accessible products.
               </div>
             </div>
           </div>
-          <div className="flex flex-col p-10 items-center gap-8">
-            <div className=" text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
+          <div className="flex flex-col p-6 md:p-10 items-center gap-6 md:gap-8 px-4">
+            <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10">
               Looking Forward
             </div>
-            <div className="text-xl text-white/80 w-250 text-center mt-6">
+            <div className="text-base sm:text-lg md:text-xl text-white/80 w-full max-w-5xl text-center mt-6 px-4">
               The road ahead is exciting. We plan to deepen our impact in
               existing sectors, explore new domains, and continuously evolve our
-              offerings. More importantly, we’re committed to staying true to
+              offerings. More importantly, we're committed to staying true to
               our values, grounded in user needs, and ambitious enough to
               imagine better futures. We invite you to join us: whether as a
-              user, partner, collaborator, or supporter. Let’s reimagine what’s
-              possible. Together.
+              user, partner, collaborator, or supporter. Let's reimagine what's
+              possible. Together.
             </div>
-            <InteractiveHoverButton className="w-140 rounded-xl h-11 mt-2 bg-emerald-400/90 border-none text-white">
+            <InteractiveHoverButton className="w-full sm:w-60 md:w-140 rounded-xl h-11 mt-2 bg-emerald-400/90 border-none text-white">
               Join Us
             </InteractiveHoverButton>
           </div>
-          <div className="w-screen mt-15">
+          <div className="w-full mt-8 md:mt-15">
             <Footer />
           </div>
         </div>

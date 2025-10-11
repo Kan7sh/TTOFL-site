@@ -10,7 +10,7 @@ import { Label } from "@radix-ui/react-label";
 
 export default function CareersPage() {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-neutral-950">
+    <div className="relative flex min-h-screen w-full items-center justify-center bg-neutral-950">
       <div
         className={cn(
           "absolute inset-0",
@@ -24,33 +24,35 @@ export default function CareersPage() {
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-      <div className="flex flex-col  items-center justify-center absolute top-50 gap-5">
-        <div className="flex flex-row-reverse items-center gap-20">
-          <div className="flex flex-col gap-5">
-            <div className="text-2xl md:text-3xl lg:text-4xl w-160 font-extrabold  text-white z-100">
-                Want to Join our creative team? 
+      <div className="flex flex-col w-full items-center justify-center absolute top-30  md:top-50 gap-5 px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-20 w-full max-w-7xl">
+          <div className="flex flex-col gap-5 w-full lg:w-auto">
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl w-full lg:w-160 font-extrabold text-white z-100">
+              Want to Join our creative team?
             </div>
             <Input
               type="Name"
               placeholder="Name"
-              className="bg-neutral-800 h-12 w-140 border-gray-500"
+              className="bg-neutral-800 h-12 w-full lg:w-140 border-gray-500"
             />
 
             <Input
               type="email"
               placeholder="Email"
-              className="bg-neutral-800 h-12 w-140 border-gray-500"
+              className="bg-neutral-800 h-12 w-full lg:w-140 border-gray-500"
             />
             <div>
-              <Label htmlFor="picture" className="text-[#7e7e7f]">Resume</Label>
+              <Label htmlFor="picture" className="text-[#7e7e7f]">
+                Resume
+              </Label>
               <Input
                 id="picture"
                 type="file"
-                className="bg-neutral-800 w-140 border-gray-500 justify-center text-[#7e7e7f] align-centerself center"
+                className="bg-neutral-800 w-full lg:w-140 border-gray-500 justify-center text-[#7e7e7f] align-centerself center"
               />
             </div>
 
-            <InteractiveHoverButton className="w-140 rounded-xl h-10 bg-emerald-400/90 border-none text-white ">
+            <InteractiveHoverButton className="w-full lg:w-140 rounded-xl h-10 bg-emerald-400/90 border-none text-white ">
               Sumbit
             </InteractiveHoverButton>
           </div>
@@ -58,11 +60,11 @@ export default function CareersPage() {
             src={career1.src}
             width={650}
             alt="linear demo image"
-            className="rounded-2xl"
+            className="grayscale rounded-2xl w-full lg:w-auto max-w-2xl mx-auto lg:mx-0"
           />
         </div>
 
-        <div className="w-full mt-15">
+        <div className="mt-8 md:mt-15 w-full">
           <Footer />
         </div>
       </div>

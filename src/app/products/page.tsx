@@ -251,21 +251,18 @@ export default function ProductsPage() {
           Key Benefits
         </div>
         <div className="flex flex-col  gap-16">
-          <div className="flex flex-row items-center gap-16 px-24">
-            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[40px] lg:min-h-[300px] h-[330px]">
-              <div className="flex flex-row">
+          <div className="flex flex-col lg:flex-row items-center gap-16 px-8 lg:px-24">
+            <WobbleCard containerClassName=" bg-emerald-900/90 ">
+              <div className="flex flex-col-reverse gap-3  lg:">
                 <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Residents
                   </h2>
-                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                  <p className="mt-4 text-left lg:text-base/6 text-neutral-200">
                     <ul>
                       <li> • Convenient booking for all car services</li>
                       <li> • Transparent pricing and trusted providers</li>
-                      <li>
-                        {" "}
-                        • Time-saving with scheduled and tracked services
-                      </li>
+                      <li> • Time-saving with scheduled and tracked services</li>
                       <li> • Hassle-free secure payments and receipts</li>
                     </ul>
                   </p>
@@ -282,13 +279,13 @@ export default function ProductsPage() {
                 />
               </div>
             </WobbleCard>
-            <WobbleCard containerClassName=" bg-[#005099] min-h-[40px] lg:min-h-[300px] h-[330px]">
-              <div className="flex flex-row">
+            <WobbleCard containerClassName=" bg-[#005099] ">
+              <div className="flex flex-col-reverse gap-3  lg:flex-row">
                 <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Vendors
                   </h2>
-                  <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                  <p className="mt-4 text-left  lg:text-base/6 text-neutral-200">
                     <ul>
                       <li> • Verified leads from trusted communities</li>
                       <li> • Guaranteed, timely digital payments</li>
