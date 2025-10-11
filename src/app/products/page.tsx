@@ -253,7 +253,7 @@ export default function ProductsPage() {
         <div className="flex flex-col  gap-16">
           <div className="flex flex-col lg:flex-row items-center gap-16 px-8 lg:px-24">
             <WobbleCard containerClassName=" bg-emerald-900/90 ">
-              <div className="flex flex-col-reverse gap-3  lg:">
+              <div className="flex flex-col-reverse gap-3  lg:flex-row">
                 <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Residents
