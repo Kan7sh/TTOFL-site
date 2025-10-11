@@ -47,7 +47,7 @@ export default function GlassmorphNavBar() {
           <Link href="/"> Home</Link>
           <Link href="/about">About</Link>
           <Link href="/products">Products</Link>
-          <Link href="/products">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </div>
       )}
     </nav>
