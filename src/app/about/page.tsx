@@ -15,6 +15,7 @@ import aboudCard4 from "@/assets/images/AC4.png";
 
 import { InteractiveHoverButton } from "@/components/ui/interactiveHoverButton";
 import { CometCard } from "@/components/ui/comet-card";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -27,7 +28,7 @@ export default function AboutPage() {
         )}
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
-      <GlassmorphNavBar />
+      <GlassmorphNavBar selectedTab={"about"} />
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
@@ -59,7 +60,7 @@ export default function AboutPage() {
             className="rounded-2xl w-full md:w-auto max-w-md order-1 md:order-2"
           />
         </div>
-        <div className="bg-gradient-to-t from-[#020303] to-transparent flex flex-col p-6 md:p-12 w-full">
+        <div className="bg-gradient-to-t from-[#0a0a0a] to-[#020203] flex flex-col p-6 md:p-12 w-full">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white z-10 px-4">
             Our Story
           </div>
@@ -326,9 +327,11 @@ export default function AboutPage() {
               user, partner, collaborator, or supporter. Let's reimagine what's
               possible. Together.
             </div>
-            <InteractiveHoverButton className="w-full sm:w-60 md:w-140 rounded-xl h-11 mt-2 bg-emerald-400/90 border-none text-white">
-              Join Us
-            </InteractiveHoverButton>
+            <Link href={"/contact"}>
+              <InteractiveHoverButton className="w-full sm:w-60 md:w-140 rounded-xl h-11 mt-2 bg-emerald-400/90 border-none text-white">
+                Join Us
+              </InteractiveHoverButton>
+            </Link>
           </div>
           <div className="w-full mt-8 md:mt-15">
             <Footer />

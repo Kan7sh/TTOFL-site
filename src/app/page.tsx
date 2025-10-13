@@ -60,7 +60,9 @@ const slides = [
         <div className="text-emerald-400/90 text-3xl lg:text-6xl font-extrabold drop-shadow-lg ">
           Reimagining real-world challenges
         </div>
-        <div className="pb-5 text-2xl lg:text-5xl">with powerful mobile solutions</div>
+        <div className="pb-5 text-2xl lg:text-5xl">
+          with powerful mobile solutions
+        </div>
         <ul className="list-disc lg:pl-6 text-white justify-self-start">
           <Link href="/products">
             <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
@@ -101,7 +103,9 @@ const slides = [
         <div className="text-emerald-400/90 text-3xl lg:text-6xl font-extrabold drop-shadow-lg ">
           Empowering Industries
         </div>
-        <div className="pb-5 text-2xl lg:text-5xl">with innovative solutions</div>
+        <div className="pb-5 text-2xl lg:text-5xl">
+          with innovative solutions
+        </div>
         <ul className="list-disc lg:pl-6 text-white justify-self-start"></ul>
         <Link href="/about">
           <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
@@ -144,7 +148,9 @@ const slides = [
         <div className="text-emerald-400/90 text-3xl lg:text-6xl font-extrabold drop-shadow-lg ">
           Solutions that Protect
         </div>
-        <div className="pb-5 text-2xl lg:text-5xl">empowers, and shapes tomorrow</div>
+        <div className="pb-5 text-2xl lg:text-5xl">
+          empowers, and shapes tomorrow
+        </div>
         <ul className="list-disc lg:pl-6 text-white justify-self-start">
           <Link href="/about">
             <button className="relative inline-flex w-58 h-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-emerald-400/90 focus:ring-offset-2 focus:ring-offset-slate-50">
@@ -206,7 +212,7 @@ export default function Home() {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-neutral-950">
-      <GlassmorphNavBar />
+      <GlassmorphNavBar selectedTab="home" />
 
       <div className="relative w-full h-screen flex items-center justify-center">
         <AnimatePresence initial={false} custom={direction}>
@@ -215,8 +221,7 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full"
             style={{
               background: `url(${slides[imageIndex].image}) 65% center/cover no-repeat`,
-                backgroundPosition: '65% center',
-
+              backgroundPosition: "65% center",
             }}
             custom={direction}
             variants={variants}
@@ -267,8 +272,8 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="pt-35 pb-28">
-        <div className="flex flex-col-reverse gap-10">
+      <div className="pt-35 pb-28 lg:flex lg:items-center lg:justify-center">
+        <div className="flex flex-col-reverse gap-10 lg:max-w-8xl lg:px-5 lg:w-11/12">
           <div className="flex flex-col lg:flex-row items-stretch gap-10 px-10">
             <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[400px] ">
               <div className="flex flex-col lg:flex-row gap-10 h-full items-center justify-center">
@@ -276,7 +281,7 @@ export default function Home() {
                   <h2 className="text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Innovation at its Best
                   </h2>
-                  <p className="mt-4 text-justify  text-base/6 text-neutral-200">
+                  <p className="mt-4 text-justify  text-sm text-neutral-200">
                     Our team of tech-savvy individuals is driven by innovation,
                     devoted to making your life easier and more efficient, and
                     committed to creating top-tier mobile applications for you
@@ -297,7 +302,7 @@ export default function Home() {
                   <h2 className="text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Quality Matters
                   </h2>
-                  <p className="mt-4 text-justify  text-base/6 text-neutral-200">
+                  <p className="mt-4 text-justify  text-sm text-neutral-200">
                     We understand that quality is paramount. That's why we're
                     devoted to providing you with a top-tier mobile application,
                     crafted with precision and care
@@ -320,7 +325,7 @@ export default function Home() {
                   <h2 className="text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Our Promise
                   </h2>
-                  <p className="mt-4 text-justify  text-base/6 text-neutral-200">
+                  <p className="mt-4 text-justify  text-sm text-neutral-200">
                     At TTOFL, we're not just creating apps; we're crafting
                     experiences. Experiences that will make your life easier,
                     more enjoyable, and more rewarding, all while contributing
@@ -347,7 +352,7 @@ export default function Home() {
         <img src={home1.src} alt="linear demo image" />
       </div>
 
-      <section className="py-20 px-8 lg:px-25 bg-gradient-to-b from-black via-neutral-800 to-black text-white">
+      <section className="py-20 px-8 lg:px-25 bg-gradient-to-b from-[#000000] via-neutral-800 to-[#0a0a0a] text-white">
         <div className=" mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

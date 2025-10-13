@@ -5,7 +5,11 @@ import { Menu } from "lucide-react";
 import ttoflLogo from "@/assets/images/ttofl_logo.png";
 import Image from "next/image";
 import { InteractiveHoverButton } from "./interactiveHoverButton";
-export default function GlassmorphNavBar() {
+export default function GlassmorphNavBar({
+  selectedTab,
+}: {
+  selectedTab?: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,21 +20,52 @@ export default function GlassmorphNavBar() {
     >
       <div className="flex justify-between items-center w-full">
         <div className="flex items-center gap-2">
-          <Image src={ttoflLogo} alt={"logo"} className=" w-25 lg:w-38" />
+          <Link href={"/"}>
+            <Image src={ttoflLogo} alt={"logo"} className=" w-25 lg:w-38" />
+          </Link>
           <div className="hidden gap-4 md:flex"></div>
         </div>
         <div className="hidden md:block">
-          <div className="flex flex-row  items-center gap-10 px-5 py-3">
-            <Link href="/" className="text-white hover:underline">
+          <div className="flex flex-row  items-center  px-5 py-3">
+            <Link
+              href="/"
+              className={`${
+                selectedTab == "home" ? "text-black font-bold" : "text-white"
+              } ${
+                selectedTab == "home" ? "bg-white" : "bg-transparent"
+              } p-2 text-center rounded-3xl ${
+                selectedTab != "home" ? "hover:underline" : ""
+              } w-25 `}
+            >
               Home
             </Link>
-            <Link href="/about" className="text-white hover:underline">
+            <Link
+              href="/about"
+              className={`${
+                selectedTab == "about" ? "text-black font-bold" : "text-white"
+              } ${
+                selectedTab == "about" ? "bg-white" : "bg-transparent"
+              } p-2 text-center rounded-3xl ${
+                selectedTab != "about" ? "hover:underline" : ""
+              } w-25 `}
+            >
               About
             </Link>
-            <Link href="/products" className="text-white hover:underline">
+            <Link
+              href="/products"
+              className={`${
+                selectedTab == "products"
+                  ? "text-black font-bold"
+                  : "text-white"
+              } ${
+                selectedTab == "products" ? "bg-white" : "bg-transparent"
+              } p-2 text-center rounded-3xl ${
+                selectedTab != "products" ? "hover:underline" : ""
+              } w-25 `}
+            >
               Products
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" className="ml-3">
               <InteractiveHoverButton>Contact us</InteractiveHoverButton>
             </Link>
           </div>

@@ -24,6 +24,7 @@ import productSocietyCars4 from "@/assets/images/PSC4.png";
 import productCardImg1 from "@/assets/images/PC1.png";
 import productCardImg2 from "@/assets/images/PC2.png";
 import societyCarsBanner from "@/assets/images/SCM1.png";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -85,7 +86,7 @@ export default function ProductsPage() {
 
   return (
     <div className="relative w-full min-h-screen bg-neutral-950 text-white">
-      <GlassmorphNavBar />
+      <GlassmorphNavBar  selectedTab={"products"}/>
 
       <GridBeams className="w-full min-h-screen flex flex-col">
         <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
@@ -247,29 +248,30 @@ export default function ProductsPage() {
         </div>
       </section>
       <section className="pb-20">
-        <div className="font-mono mt-9 mb-15 text-3xl md:text-5xl lg:text-4xl font-extrabold text-center text-white z-10">
+        <div className=" mt-9 mb-15 text-3xl md:text-5xl lg:text-4xl font-extrabold text-center text-white z-10">
           Key Benefits
         </div>
         <div className="flex flex-col  gap-16">
           <div className="flex flex-col lg:flex-row items-center gap-16 px-8 lg:px-24">
-            <WobbleCard containerClassName=" bg-emerald-900/90 ">
-              <div className="flex flex-col-reverse gap-3  lg:flex-row">
+            <WobbleCard containerClassName=" bg-emerald-900/90 lg:h-90">
+              <div className="flex flex-col-reverse gap-3 items-center  lg:flex-row">
                 <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Residents
                   </h2>
-                  <p className="mt-4 text-left lg:text-base/6 text-neutral-200">
+                  <p className="mt-4 text-left lg:text-md text-neutral-200">
                     <ul>
                       <li> • Convenient booking for all car services</li>
                       <li> • Transparent pricing and trusted providers</li>
-                      <li> • Time-saving with scheduled and tracked services</li>
+                      <li> • Time-saving with scheduled and tracked services
+                      </li>
                       <li> • Hassle-free secure payments and receipts</li>
                     </ul>
                   </p>
                 </div>
                 <img
                   loading="lazy"
-                  className="rounded-2xl w-40 h-40 object-cover mb-4 mx-auto"
+                  className="rounded-2xl w-50 h-50 object-cover mb-4 mx-auto"
                   alt="Invite background"
                   src={productCardImg1.src}
                   style={{
@@ -279,13 +281,13 @@ export default function ProductsPage() {
                 />
               </div>
             </WobbleCard>
-            <WobbleCard containerClassName=" bg-[#005099] ">
-              <div className="flex flex-col-reverse gap-3  lg:flex-row">
+            <WobbleCard containerClassName=" bg-[#005099] lg:h-90">
+              <div className="flex flex-col-reverse gap-3 items-center  lg:flex-row">
                 <div>
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Vendors
                   </h2>
-                  <p className="mt-4 text-left  lg:text-base/6 text-neutral-200">
+                  <p className="mt-4 text-left  lg:text-md text-neutral-200">
                     <ul>
                       <li> • Verified leads from trusted communities</li>
                       <li> • Guaranteed, timely digital payments</li>
@@ -296,7 +298,7 @@ export default function ProductsPage() {
                 </div>
                 <img
                   loading="lazy"
-                  className="rounded-2xl w-40 h-40 object-cover mb-4 mx-auto"
+                  className="rounded-2xl w-50 h-50 object-cover mb-4 mx-auto"
                   alt="Invite background"
                   src={productCardImg2.src}
                   style={{
@@ -407,9 +409,11 @@ export default function ProductsPage() {
             Join us in redefining auto care with trust, transparency, and
             convenience for every resident.
           </p>
-          <button className="px-6 py-3 rounded-2xl bg-white text-black font-semibold shadow-md hover:scale-105 transition">
-            Contact Us
-          </button>
+          <Link href="/contact">
+            <button className="px-6 py-3 rounded-2xl bg-white text-black font-semibold shadow-md hover:scale-105 transition">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </section>
 

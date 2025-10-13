@@ -11,11 +11,13 @@ import Image from "next/image";
 import logo from "@/assets/images/ttofl_logo.png";
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({ bgColor }: { bgColor?: string }) {
   return (
-    <footer className="bg-black text-white py-12 w-full">
-      <div className=" mx-auto px-6 lg:px-8">
-        {/* Center-align the grid columns */}
+    <footer
+      style={{ backgroundColor: bgColor ?? "#0a0a0a" }}
+      className={`text-white py-12 w-full`}
+    >
+      <div className=" mx-auto px-6 lg:px-8  w-11/12 max-w-8xl">
         <div className=" lg:pl-14 grid grid-cols-2 md:grid-cols-5 gap-3">
           <div>
             <h3 className="text-lg font-semibold mb-4">Industries</h3>
@@ -36,15 +38,6 @@ export default function Footer() {
               <li>EduBridgeX (soon)</li>
               <li>AgriConnect (soon)</li>
               <li>MediReview (soon)</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Our Values</h3>
-            <ul className="space-y-2">
-              <li>Continuous Learning</li>
-              <li>Innovation</li>
-              <li>Commitment</li>
-              <li>Collaboration</li>
             </ul>
           </div>
 
@@ -80,14 +73,21 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
             <span>© 2025 TTOFL</span>
+            <a href="#">Privacy Policy</a>
           </div>
 
           <div className="flex items-center justify-center gap-3 text-2xl">
-            <a href="mailto:contact@ttofl.com">
-              <div className="text-lg text-gray-400">contact@ttofl.com</div>
+            <a href="#">
+              <FaFacebook className="text-blue-500 rounded " />
+            </a>
+            <a href="#">
+              <FaInstagram className="text-pink-500 rounded " />
+            </a>
+            <a href="#">
+              <FaXTwitter className="text-white rounded " />
             </a>
             <a href="https://www.linkedin.com/company/ttofl/">
-              <FaLinkedin className="text-blue-700 rounded " />
+              <FaLinkedin className="text-cyan-600 rounded " />
             </a>
           </div>
         </div>

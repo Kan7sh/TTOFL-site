@@ -75,14 +75,13 @@ export default function ContactPage() {
         )}
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
-      <GlassmorphNavBar />
+      <GlassmorphNavBar  />
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
       <div className="flex flex-col w-full items-center justify-center absolute top-30  md:top-50 gap-5 px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 w-full max-w-7xl">
-          
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-5 w-full lg:w-auto"
@@ -148,7 +147,7 @@ export default function ContactPage() {
         </div>
 
         <div className="w-full mt-8 md:mt-15">
-          <Footer />
+          <Footer bgColor="#020203" />
         </div>
       </div>
     </div>
