@@ -275,7 +275,7 @@ export default function Home() {
       <div className="pt-35 pb-28 lg:flex lg:items-center lg:justify-center">
         <div className="flex flex-col-reverse gap-10 lg:max-w-8xl lg:px-5 lg:w-11/12">
           <div className="flex flex-col lg:flex-row items-stretch gap-10 px-10">
-            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[400px] ">
+            <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[330px] 2xl:min-h-[400px] ">
               <div className="flex flex-col lg:flex-row gap-10 h-full items-center justify-center">
                 <div className="max-w-xs">
                   <h2 className="text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -294,7 +294,7 @@ export default function Home() {
                 />
               </div>
             </WobbleCard>
-            <WobbleCard containerClassName=" bg-[#0]  min-h-[400px]">
+            <WobbleCard containerClassName=" bg-[#0]  min-h-[330px] 2xl:min-h-[400px]">
               <div className="flex flex-col lg:flex-row gap-10 h-full items-center justify-center">
                 <div className="max-w-xs">
                   <h2 className="text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -314,9 +314,9 @@ export default function Home() {
               </div>
             </WobbleCard>
           </div>
-          <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center  items-stretch px-10">
-            <WobbleCard containerClassName=" bg-[#005099] min-h-[400px]  flex-1 ">
-              <div className="flex flex-col lg:flex-row gap-7 2xl:gap-10 h-hull items-center">
+          <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center   px-10">
+            <WobbleCard containerClassName=" bg-[#005099] min-h-[330px] 2xl:min-h-[400px]  flex-1 ">
+              <div className="flex flex-col lg:flex-row gap-7 2xl:gap-10 h-hull items-center justify-centerr">
                 <div className="max-w-xs">
                   <h2 className="text-left text-balance text-2xl md:text-2xl 2xl:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Our Promise
