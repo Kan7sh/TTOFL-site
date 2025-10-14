@@ -281,17 +281,16 @@ export default function Home() {
                   <h2 className="text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Innovation at its Best
                   </h2>
-                  <p className="mt-4 text-justify  text-sm text-neutral-200">
+                  <p className="mt-4 text-justify md:text-xs 2xl:text-sm  text-sm text-neutral-200">
                     Our team of tech individuals is driven by innovation,
-                    devoted to making your life easier and more efficient, 
+                    devoted to making your life easier and more efficient,
                     committed to creating top-tier mobile applications for you
                   </p>
                 </div>
                 <img
                   src={card1.src}
-
                   alt="linear demo image"
-                  className="w-65 2xl:w-80 grayscale filter object-contain rounded-2xl"
+                  className="w-60 2xl:w-80 grayscale filter object-contain rounded-2xl"
                 />
               </div>
             </WobbleCard>
@@ -301,7 +300,7 @@ export default function Home() {
                   <h2 className="text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Quality Matters
                   </h2>
-                  <p className="mt-4 text-justify  text-sm text-neutral-200">
+                  <p className="mt-4 text-justify md:text-xs 2xl:text-sm  text-sm text-neutral-200">
                     We understand that quality is paramount. That's why we're
                     devoted to providing you with a top-tier mobile application,
                     crafted with precision and care
@@ -309,21 +308,20 @@ export default function Home() {
                 </div>
                 <img
                   src={card2.src}
-
                   alt="linear demo image"
-                  className="w-65 2xl:w-80 grayscale filter  object-contain rounded-2xl"
+                  className="w-60 2xl:w-80 grayscale filter  object-contain rounded-2xl"
                 />
               </div>
             </WobbleCard>
           </div>
-          <div className="flex flex-col-reverse lg:flex-row-reverse  items-stretch px-10">
+          <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center  items-stretch px-10">
             <WobbleCard containerClassName=" bg-[#005099] min-h-[400px]  flex-1 ">
               <div className="flex flex-col lg:flex-row gap-7 2xl:gap-10 h-hull items-center">
                 <div className="max-w-xs">
                   <h2 className="text-left text-balance text-2xl md:text-2xl 2xl:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Our Promise
                   </h2>
-                  <p className="mt-4 text-justify  text-sm text-neutral-200">
+                  <p className="mt-4 text-justify  text-sm md:text-xs 2xl:text-sm text-neutral-200">
                     At TTOFL, we're not just creating apps; we're crafting
                     experiences. Experiences that will make your life easier,
                     more enjoyable, and more rewarding, all while contributing
@@ -332,13 +330,12 @@ export default function Home() {
                 </div>
                 <img
                   src={card3.src}
-           
                   alt="linear demo image"
-                  className="w-65 2xl:w-80  grayscale filter  object-contain rounded-2xl"
+                  className="w-60 2xl:w-80  grayscale filter  object-contain rounded-2xl"
                 />
               </div>
             </WobbleCard>
-            <h1 className="text-4xl  2xl:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex-1 p-5">
+            <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex-1 p-5">
               Building amazing Products <br />
               for <Cover className="dark">Future Generation</Cover>
             </h1>
