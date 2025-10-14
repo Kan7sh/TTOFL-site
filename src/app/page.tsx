@@ -274,7 +274,7 @@ export default function Home() {
       </div>
       <div className="pt-35 pb-28 lg:flex lg:items-center lg:justify-center">
         <div className="flex flex-col-reverse gap-10 lg:max-w-8xl lg:px-5 lg:w-11/12">
-          <div className="flex flex-col lg:flex-row items-stretch gap-10 px-10">
+          <div className="flex flex-col 2xl:flex-row items-stretch gap-10 px-10">
             <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[400px] ">
               <div className="flex flex-col lg:flex-row gap-10 h-full items-center justify-center">
                 <div className="max-w-xs">

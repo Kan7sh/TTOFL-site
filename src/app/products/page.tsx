@@ -75,7 +75,7 @@ export default function ProductsPage() {
             url
           )}`}
           alt={`${label} QR Code`}
-          className="w-40 h-40"
+          className="w-35 h-35"
         />
       </div>
       <div className="text-center">
@@ -86,13 +86,13 @@ export default function ProductsPage() {
 
   return (
     <div className="relative w-full min-h-screen bg-neutral-950 text-white">
-      <GlassmorphNavBar  selectedTab={"products"}/>
+      <GlassmorphNavBar selectedTab={"products"} />
 
       <GridBeams className="w-full min-h-screen flex flex-col">
-        <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-black to-transparent  z-10" />
 
-        <div className="flex-1 flex items-center justify-center px-6 pt-32">
-          <div className="max-w-6xl mx-auto text-center">
+        <div className="flex-1 flex items-center justify-center px-6 ">
+          <div className="max-w-6xl min-h-screen  mx-auto text-center pt-32">
             <div className="flex flex-col md:flex-row justify-center items-center gap-3 mb-12">
               <img
                 src={societyCarsLogo.src}
@@ -101,7 +101,7 @@ export default function ProductsPage() {
                 className="rounded-2xl"
               />
               <div className="flex flex-col items-center md:items-start">
-                <h1 className="text-3xl md:text-6xl font-extrabold mb-4">
+                <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
                   SOCIETY CARS
                 </h1>
                 <p className="text-lg md:text-xl max-w-3xl">
@@ -117,7 +117,7 @@ export default function ProductsPage() {
                 </h2>
                 <p className="text-lg mb-6">
                   Watch how Society Cars transforms everyday automobile services
-                  within residential communities — from booking to fulfillment.
+                  within residential communities - from booking to fulfillment.
                 </p>
 
                 <div className="mt-2">
@@ -141,7 +141,10 @@ export default function ProductsPage() {
               </div>
 
               <div className="relative">
-                <img src={societyCarsBanner.src} alt="Society Cars Banner" />
+                <img
+                  src={societyCarsBanner.src}
+                  alt="Society Cars Banner"
+                />
                 {/* <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -263,7 +266,9 @@ export default function ProductsPage() {
                     <ul>
                       <li> • Convenient booking for all car services</li>
                       <li> • Transparent pricing and trusted providers</li>
-                      <li> • Time-saving with scheduled and tracked services
+                      <li>
+                        {" "}
+                        • Time-saving with scheduled and tracked services
                       </li>
                       <li> • Hassle-free secure payments and receipts</li>
                     </ul>

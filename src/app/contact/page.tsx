@@ -10,6 +10,11 @@ import { Textarea } from "@/components/ui/textarea";
 import contact1 from "@/assets/images/CU1.png";
 import { cn } from "@/lib/utils";
 
+const validateEmail = (email: string) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -28,6 +33,14 @@ export default function ContactPage() {
   };
 
   const handleSubmit = async (e: any) => {
+    if (!validateEmail(formData.email)) {
+      setSubmitStatus({
+        type: "error",
+        message: "Please enter a valid email address.",
+      });
+      return;
+    }
+
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: "", message: "" });
@@ -74,8 +87,8 @@ export default function ContactPage() {
           "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
       />
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
-      <GlassmorphNavBar  />
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-neutral-950"></div>
+      <GlassmorphNavBar />
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
@@ -147,7 +160,7 @@ export default function ContactPage() {
         </div>
 
         <div className="w-full mt-8 md:mt-15">
-          <Footer bgColor="#020203" />
+          <Footer bgColor="#0a0a0a" />
         </div>
       </div>
     </div>

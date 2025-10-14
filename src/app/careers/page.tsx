@@ -142,7 +142,7 @@ export default function CareersPage() {
           "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
       />
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-neutral-950"></div>
       <GlassmorphNavBar selectedTab={""}  />
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
@@ -219,7 +219,7 @@ export default function CareersPage() {
         </div>
 
         <div className="mt-8 md:mt-15 w-full">
-          <Footer bgColor="#020203" />
+          <Footer bgColor="#0a0a0a" />
         </div>
       </div>
     </div>

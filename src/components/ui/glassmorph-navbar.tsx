@@ -66,7 +66,7 @@ export default function GlassmorphNavBar({
               Products
             </Link>
             <Link href="/contact" className="ml-3">
-              <InteractiveHoverButton>Contact us</InteractiveHoverButton>
+              <InteractiveHoverButton className="bg-emerald-400/90 border-emerald-400/90">Contact us</InteractiveHoverButton>
             </Link>
           </div>
         </div>
