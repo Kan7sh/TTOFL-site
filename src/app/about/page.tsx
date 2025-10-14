@@ -94,7 +94,7 @@ export default function AboutPage() {
                     AGRICULTURE
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 lg:h-38 2xl:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -132,7 +132,7 @@ export default function AboutPage() {
                     MEDICINE
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
+                  <div className="relative w-full h-40 lg:h-38 2xl:h-48 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -170,7 +170,7 @@ export default function AboutPage() {
                     EDUCATION
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
+                  <div className="relative w-full lg:h-38 2xl:h-48 h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -208,7 +208,7 @@ export default function AboutPage() {
                     AUTOMOBILE
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
+                  <div className="relative w-full lg:h-38 2xl:h-48 h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
