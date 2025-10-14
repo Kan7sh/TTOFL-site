@@ -81,7 +81,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-6 md:my-10 flex h-auto md:h-100 2xl:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
+                className="my-6 md:my-10 flex h-auto md:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -94,7 +94,7 @@ export default function AboutPage() {
                     AGRICULTURE
                   </div>
 
-                  <div className="relative w-70 2xl:w-full h-40 sm:h-48 lg:h-38 2xl:h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -119,7 +119,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-6 md:my-10 flex h-auto md:h-100 2xl:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
+                className="my-6 md:my-10 flex h-auto md:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -132,7 +132,7 @@ export default function AboutPage() {
                     MEDICINE
                   </div>
 
-                  <div className="relative 2xl:w-full h-40 lg:h-38 2xl:h-48 sm:h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -157,7 +157,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-6 md:my-10 h-auto md:h-100 2xl:h-120 flex w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
+                className="my-6 md:my-10 h-auto md:h-120 flex w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -170,7 +170,7 @@ export default function AboutPage() {
                     EDUCATION
                   </div>
 
-                  <div className="relative 2xl:w-full lg:h-38 2xl:h-48 h-40 sm:h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
@@ -195,7 +195,7 @@ export default function AboutPage() {
             <CometCard>
               <button
                 type="button"
-                className="my-6 md:my-10 flex w-full sm:w-80 h-auto md:h-100 2xl:h-120 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
+                className="my-6 md:my-10 flex w-full sm:w-80 h-auto md:h-120 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
                 aria-label="View invite F7RA"
                 style={{
                   transformStyle: "preserve-3d",
@@ -208,7 +208,7 @@ export default function AboutPage() {
                     AUTOMOBILE
                   </div>
 
-                  <div className="relative 2xl:w-full lg:h-38 2xl:h-48 h-40 sm:h-48 mb-4">
+                  <div className="relative w-full h-40 sm:h-48 mb-4">
                     <img
                       loading="lazy"
                       className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
