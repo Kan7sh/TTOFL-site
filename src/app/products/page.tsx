@@ -141,10 +141,7 @@ export default function ProductsPage() {
               </div>
 
               <div className="relative">
-                <img
-                  src={societyCarsBanner.src}
-                  alt="Society Cars Banner"
-                />
+                <img src={societyCarsBanner.src} alt="Society Cars Banner" />
                 {/* <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -262,21 +259,18 @@ export default function ProductsPage() {
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Residents
                   </h2>
-                  <p className="mt-4 text-left lg:text-md text-neutral-200">
+                  <p className="mt-4 text-left text-md lg:text-sm 2xl:text-md text-neutral-200">
                     <ul>
                       <li> • Convenient booking for all car services</li>
                       <li> • Transparent pricing and trusted providers</li>
-                      <li>
-                        {" "}
-                        • Time-saving with scheduled and tracked services
-                      </li>
+                      <li>• Time-saving with scheduled and tracked services</li>
                       <li> • Hassle-free secure payments and receipts</li>
                     </ul>
                   </p>
                 </div>
                 <img
                   loading="lazy"
-                  className="rounded-2xl w-50 h-50 object-cover mb-4 mx-auto"
+                  className="rounded-2xl w-44 h-44 2xl:w-50 2xl:h-50 object-cover mb-4 mx-auto"
                   alt="Invite background"
                   src={productCardImg1.src}
                   style={{
@@ -292,7 +286,7 @@ export default function ProductsPage() {
                   <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     For Vendors
                   </h2>
-                  <p className="mt-4 text-left  lg:text-md text-neutral-200">
+                  <p className="mt-4 text-left  text-md lg:text-sm 2xl:text-md text-neutral-200">
                     <ul>
                       <li> • Verified leads from trusted communities</li>
                       <li> • Guaranteed, timely digital payments</li>
@@ -303,7 +297,7 @@ export default function ProductsPage() {
                 </div>
                 <img
                   loading="lazy"
-                  className="rounded-2xl w-50 h-50 object-cover mb-4 mx-auto"
+                  className="rounded-2xl  w-44 h-44 2xl:w-50 2xl:h-50  object-cover mb-4 mx-auto"
                   alt="Invite background"
                   src={productCardImg2.src}
                   style={{
