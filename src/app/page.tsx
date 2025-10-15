@@ -278,8 +278,8 @@ export default function Home() {
             <WobbleCard containerClassName=" bg-emerald-900/90 min-h-[330px] 2xl:min-h-[400px] ">
               <div className="flex flex-col lg:flex-row gap-10 h-full items-center justify-center">
                 <div className="max-w-xs">
-                  <h2 className="text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                    Innovation at its Best
+                  <h2 className="text-left text-balance text-2xl md:text-xl lg:text-2xl font-semibold tracking-[-0.015em] text-white">
+                    Innovation at Best
                   </h2>
                   <p className="mt-4 text-justify md:text-xs 2xl:text-sm  text-sm text-neutral-200">
                     Our team of tech individuals is driven by innovation,
@@ -290,14 +290,14 @@ export default function Home() {
                 <img
                   src={card1.src}
                   alt="linear demo image"
-                  className="w-60 2xl:w-80 grayscale filter object-contain rounded-2xl"
+                  className="w-60 2xl:w-75 grayscale filter object-contain rounded-2xl"
                 />
               </div>
             </WobbleCard>
             <WobbleCard containerClassName=" bg-[#0]  min-h-[330px] 2xl:min-h-[400px]">
               <div className="flex flex-col lg:flex-row gap-10 h-full items-center justify-center">
                 <div className="max-w-xs">
-                  <h2 className="text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <h2 className="text-left text-balance text-2xl md:text-xl lg:text-2xl font-semibold tracking-[-0.015em] text-white">
                     Quality Matters
                   </h2>
                   <p className="mt-4 text-justify md:text-xs 2xl:text-sm  text-sm text-neutral-200">
@@ -309,16 +309,16 @@ export default function Home() {
                 <img
                   src={card2.src}
                   alt="linear demo image"
-                  className="w-60 2xl:w-80 grayscale filter  object-contain rounded-2xl"
+                  className="w-60 2xl:w-83   grayscale filter  object-contain rounded-2xl"
                 />
               </div>
             </WobbleCard>
           </div>
-          <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center   px-10">
-            <WobbleCard containerClassName=" bg-[#005099] min-h-[330px] 2xl:min-h-[400px]  flex-1 ">
+          <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center px-10">
+            <WobbleCard containerClassName=" bg-[#005099] min-h-[330px]   flex-1 ">
               <div className="flex flex-col lg:flex-row gap-7 2xl:gap-10 h-hull items-center justify-centerr">
                 <div className="max-w-xs">
-                  <h2 className="text-left text-balance text-2xl md:text-2xl 2xl:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <h2 className="text-left text-balance text-2xl md:text-xl 2xl:text-2xl font-semibold tracking-[-0.015em] text-white">
                     Our Promise
                   </h2>
                   <p className="mt-4 text-justify  text-sm md:text-xs 2xl:text-sm text-neutral-200">
@@ -331,7 +331,7 @@ export default function Home() {
                 <img
                   src={card3.src}
                   alt="linear demo image"
-                  className="w-60 2xl:w-80  grayscale filter  object-contain rounded-2xl"
+                  className="w-60 2xl:w-83  grayscale filter  object-contain rounded-2xl"
                 />
               </div>
             </WobbleCard>
