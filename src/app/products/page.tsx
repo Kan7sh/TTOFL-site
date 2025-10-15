@@ -30,7 +30,7 @@ const testimonials = [
   {
     quote:
       "We are delighted to discover a solution tailored for vendors supporting societies. This platform will streamline our daily operations, significantly enhancing efficiency and ease of management.",
-    name: "Iran",
+    name: "Imran",
     title: "Society Vendor",
   },
   {
