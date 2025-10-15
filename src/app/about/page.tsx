@@ -94,17 +94,19 @@ export default function AboutPage() {
                     AGRICULTURE
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
-                    <img
-                      loading="lazy"
-                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
-                      alt="Invite background"
-                      src={aboudCard1.src}
-                      style={{
-                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
-                        opacity: 1,
-                      }}
-                    />
+                  <div className="relative  w-full h-40 sm:h-48 mb-4">
+                    <center className="h-full w-full">
+                      <img
+                        loading="lazy"
+                        className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full self-center"
+                        alt="Invite background"
+                        src={aboudCard1.src}
+                        style={{
+                          boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                          opacity: 1,
+                        }}
+                      />
+                    </center>
                   </div>
                 </div>
                 <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
@@ -133,16 +135,18 @@ export default function AboutPage() {
                   </div>
 
                   <div className="relative w-full h-40 sm:h-48 mb-4">
-                    <img
-                      loading="lazy"
-                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
-                      alt="Invite background"
-                      src={aboudCard2.src}
-                      style={{
-                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
-                        opacity: 1,
-                      }}
-                    />
+                    <center className="h-full w-full">
+                      <img
+                        loading="lazy"
+                        className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full"
+                        alt="Invite background"
+                        src={aboudCard2.src}
+                        style={{
+                          boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                          opacity: 1,
+                        }}
+                      />
+                    </center>
                   </div>
                 </div>
                 <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
@@ -171,9 +175,10 @@ export default function AboutPage() {
                   </div>
 
                   <div className="relative w-full h-40 sm:h-48 mb-4">
+                    <center className="h-full w-full">
                     <img
                       loading="lazy"
-                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
+                      className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full"
                       alt="Invite background"
                       src={aboudCard3.src}
                       style={{
@@ -181,6 +186,7 @@ export default function AboutPage() {
                         opacity: 1,
                       }}
                     />
+                    </center>
                   </div>
                 </div>
                 <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
@@ -209,9 +215,10 @@ export default function AboutPage() {
                   </div>
 
                   <div className="relative w-full h-40 sm:h-48 mb-4">
+                    <center className="h-full w-full">
                     <img
                       loading="lazy"
-                      className="absolute inset-0 rounded-[16px] bg-[#000000] object-cover w-full h-full"
+                      className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full"
                       alt="Invite background"
                       src={aboudCard4.src}
                       style={{
@@ -219,6 +226,7 @@ export default function AboutPage() {
                         opacity: 1,
                       }}
                     />
+                    </center>
                   </div>
                 </div>
                 <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
