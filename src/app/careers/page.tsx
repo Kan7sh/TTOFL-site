@@ -143,7 +143,7 @@ export default function CareersPage() {
         )}
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-neutral-950"></div>
-      <GlassmorphNavBar selectedTab={""}  />
+      <GlassmorphNavBar selectedTab={""} />
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
@@ -218,7 +218,7 @@ export default function CareersPage() {
           />
         </div>
 
-        <div className="mt-8 md:mt-15 w-full">
+        <div className="mt-8 md:mt-15 w-[99vw]">
           <Footer bgColor="#0a0a0a" />
         </div>
       </div>

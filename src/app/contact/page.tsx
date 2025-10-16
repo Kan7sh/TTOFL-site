@@ -159,7 +159,7 @@ export default function ContactPage() {
           />
         </div>
 
-        <div className="w-full mt-8 md:mt-15">
+        <div className="w-[99vw] mt-8 md:mt-15">
           <Footer bgColor="#0a0a0a" />
         </div>
       </div>
