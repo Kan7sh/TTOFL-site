@@ -74,111 +74,118 @@ export default function AboutPage() {
           </div>
         </div>
         <section className="py-8 px-4 md:px-6 lg:px-10 w-full">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-2 text-center text-emerald-400/90 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-emerald-400/90 px-4">
             Our Areas of Focus
           </h2>
-          <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6 md:gap-10">
-            <CometCard>
-              <button
-                type="button"
-                className="my-6 md:my-10 flex h-auto md:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
-                aria-label="View invite F7RA"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {/* Card 1 - Agriculture */}
+            <CometCard className="h-full">
+              <div
+                className="flex flex-col h-full min-h-[450px] rounded-[16px] border-0 bg-[#1F2121] p-4 cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-label="View Agriculture focus area"
                 style={{
                   transformStyle: "preserve-3d",
                   transform: "none",
                   opacity: 1,
                 }}
               >
-                <div className="mx-2">
-                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
+                <div className="flex flex-col flex-grow">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
                     AGRICULTURE
                   </div>
 
-                  <div className="relative  w-full h-40 sm:h-48 mb-4">
-                    <center className="h-full w-full">
-                      <img
-                        loading="lazy"
-                        className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full self-center"
-                        alt="Invite background"
-                        src={aboudCard1.src}
-                        style={{
-                          boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
-                          opacity: 1,
-                        }}
-                      />
-                    </center>
+                  <div className="relative w-full h-48 mb-4 flex-shrink-0">
+                    <img
+                      loading="lazy"
+                      className="rounded-[16px] bg-[#000000] object-cover w-full h-full"
+                      alt="Invite background"
+                      src={aboudCard1.src}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                        opacity: 1,
+                      }}
+                    />
+                  </div>
+
+                  <div className="flex-grow flex items-start">
+                    <div className="text-sm text-justify text-white">
+                      Agriculture Connecting fresh agri-graduates with farmers
+                      to boost productivity, promote organic farming, and
+                      streamline logistics — creating jobs while improving
+                      farmer incomes.
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
-                  <div className="text-sm sm:text-md text-justify">
-                    Agriculture Connecting fresh agri-graduates with farmers to
-                    boost productivity, promote organic farming, and streamline
-                    logistics — creating jobs while improving farmer incomes.
-                  </div>
-                </div>
-              </button>
+              </div>
             </CometCard>
-            <CometCard>
-              <button
-                type="button"
-                className="my-6 md:my-10 flex h-auto md:h-120 w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
-                aria-label="View invite F7RA"
+
+            {/* Card 2 - Medicine */}
+            <CometCard className="h-full">
+              <div
+                className="flex flex-col h-full min-h-[450px] rounded-[16px] border-0 bg-[#1F2121] p-4 cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-label="View Medicine focus area"
                 style={{
                   transformStyle: "preserve-3d",
                   transform: "none",
                   opacity: 1,
                 }}
               >
-                <div className="mx-2">
-                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
+                <div className="flex flex-col flex-grow">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
                     MEDICINE
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
-                    <center className="h-full w-full">
-                      <img
-                        loading="lazy"
-                        className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full"
-                        alt="Invite background"
-                        src={aboudCard2.src}
-                        style={{
-                          boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
-                          opacity: 1,
-                        }}
-                      />
-                    </center>
+                  <div className="relative w-full h-48 mb-4 flex-shrink-0">
+                    <img
+                      loading="lazy"
+                      className="rounded-[16px] bg-[#000000] object-cover w-full h-full"
+                      alt="Invite background"
+                      src={aboudCard2.src}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                        opacity: 1,
+                      }}
+                    />
+                  </div>
+
+                  <div className="flex-grow flex items-start">
+                    <div className="text-sm text-justify text-white">
+                      A medicine review & feedback platform that gathers
+                      real-world insights from patients and doctors, empowering
+                      companies and creating opportunities for pharmacy
+                      graduates.
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
-                  <div className="text-sm sm:text-md text-justify">
-                    A medicine review & feedback platform that gathers
-                    real-world insights from patients and doctors, empowering
-                    companies and creating opportunities for pharmacy graduates.
-                  </div>
-                </div>
-              </button>
+              </div>
             </CometCard>
-            <CometCard>
-              <button
-                type="button"
-                className="my-6 md:my-10 h-auto md:h-120 flex w-full sm:w-80 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
-                aria-label="View invite F7RA"
+
+            {/* Card 3 - Education */}
+            <CometCard className="h-full">
+              <div
+                className="flex flex-col h-full min-h-[450px] rounded-[16px] border-0 bg-[#1F2121] p-4 cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-label="View Education focus area"
                 style={{
                   transformStyle: "preserve-3d",
                   transform: "none",
                   opacity: 1,
                 }}
               >
-                <div className="mx-2">
-                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
+                <div className="flex flex-col flex-grow">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
                     EDUCATION
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
-                    <center className="h-full w-full">
+                  <div className="relative w-full h-48 mb-4 flex-shrink-0">
                     <img
                       loading="lazy"
-                      className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full"
+                      className="rounded-[16px] bg-[#000000] object-cover w-full h-full"
                       alt="Invite background"
                       src={aboudCard3.src}
                       style={{
@@ -186,39 +193,41 @@ export default function AboutPage() {
                         opacity: 1,
                       }}
                     />
-                    </center>
+                  </div>
+
+                  <div className="flex-grow flex items-start">
+                    <div className="text-sm text-justify text-white">
+                      A unified platform delivering affordable, high-quality
+                      technology training for Tier 3 students, bridging the gap
+                      between academics and employability.
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
-                  <div className="text-sm sm:text-md text-justify">
-                    A unified platform delivering affordable, high-quality
-                    technology training for Tier 3 students, bridging the gap
-                    between academics and employability.
-                  </div>
-                </div>
-              </button>
+              </div>
             </CometCard>
+
+            {/* Card 4 - Automobile */}
             <CometCard>
-              <button
-                type="button"
-                className="my-6 md:my-10 flex w-full sm:w-80 h-auto md:h-120 cursor-pointer flex-col rounded-[16px] border-0 bg-[#1F2121] p-3 md:p-4"
-                aria-label="View invite F7RA"
+              <div
+                className="flex flex-col min-h-[450px] rounded-[16px] border-0 bg-[#1F2121] p-4 cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-label="View Automobile focus area"
                 style={{
                   transformStyle: "preserve-3d",
                   transform: "none",
                   opacity: 1,
                 }}
               >
-                <div className="mx-2">
-                  <div className="text-lg sm:text-xl font-bold text-emerald-400/90 text-center mb-4">
+                <div className="flex flex-col flex-grow">
+                  <div className="text-xl font-bold text-emerald-400/90 text-center mb-4">
                     AUTOMOBILE
                   </div>
 
-                  <div className="relative w-full h-40 sm:h-48 mb-4">
-                    <center className="h-full w-full">
+                  <div className="relative w-full h-48 mb-4 flex-shrink-0">
                     <img
                       loading="lazy"
-                      className=" rounded-[16px] bg-[#000000] object-cover w-45 2xl:w-full h-full"
+                      className="rounded-[16px] bg-[#000000] object-cover w-full h-full"
                       alt="Invite background"
                       src={aboudCard4.src}
                       style={{
@@ -226,18 +235,18 @@ export default function AboutPage() {
                         opacity: 1,
                       }}
                     />
-                    </center>
+                  </div>
+
+                  <div className="flex-grow flex items-start">
+                    <div className="text-sm text-justify text-white">
+                      Automobile – Society Cars: a one-stop automobile service
+                      platform for residential communities, offering trusted,
+                      verified vendors, simplified car care in a single
+                      application.
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-shrink-0 items-start p-3 md:p-4 text-white">
-                  <div className="text-sm sm:text-md text-justify">
-                    Automobile – Society Cars: a one-stop automobile service
-                    platform for residential communities, offering trusted,
-                    verified vendors, simplified car care in a single
-                    application.
-                  </div>
-                </div>
-              </button>
+              </div>
             </CometCard>
           </div>
         </section>

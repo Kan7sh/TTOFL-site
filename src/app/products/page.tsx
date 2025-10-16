@@ -387,12 +387,12 @@ export default function ProductsPage() {
         <div className="font-mono mt-9 mb-15 text-3xl md:text-5xl lg:text-4xl font-extrabold text-center text-white z-10">
           What Our Users Say
         </div>
-        <InfiniteMovingCards
+      <center><InfiniteMovingCards
           items={testimonials}
           direction="right"
           speed="slow"
           className="mb-20"
-        />
+        /></center>
       </section>
       <section className="w-full bg-gradient-to-r from-neutral-950 via-neutral-700 to-neutral-950 py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
