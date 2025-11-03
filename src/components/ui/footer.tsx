@@ -73,7 +73,7 @@ export default function Footer({ bgColor }: { bgColor?: string }) {
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
             <span>© 2025 TTOFL</span>
-            <a href="#">Privacy Policy</a>
+            <a href="/privacy_policy/society_cars">Privacy Policy</a>
           </div>
 
           <div className="flex items-center justify-center gap-3 text-2xl">
