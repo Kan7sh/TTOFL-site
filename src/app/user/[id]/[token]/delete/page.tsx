@@ -1,15 +1,9 @@
 import DeleteUserClient from "@/components/ui/DeleteUserClient";
 import GlassmorphNavBar from "@/components/ui/glassmorph-navbar";
 
-export default function DeleteUserPage({
-  params,
-}: {
-  params: {
-    id: string;
-    token: string;
-  };
-}) {
-  const { id, token } = params;
+export default function DeleteUserPage(props: any) {
+
+  const { id, token } = (props.params ?? {}) as { id: string; token: string };
 
   return (
     <div className="relative min-h-screen w-full bg-neutral-950">
