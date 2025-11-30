@@ -2,6 +2,8 @@ import Footer from "@/components/ui/footer";
 import GlassmorphNavBar from "@/components/ui/glassmorph-navbar";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import societyCarsLogo from "@/assets/images/SC1C.png";
 
 export default function VideosPage() {
   return (
@@ -14,18 +16,51 @@ export default function VideosPage() {
         )}
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-neutral-950"></div>
+
       <GlassmorphNavBar />
+
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-      <div className="flex flex-col w-full items-center justify-center absolute top-30  md:top-50 gap-5 px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 w-full max-w-7xl">
-          <div></div>
-          <div></div>
+
+      <div className="flex flex-col w-full items-center justify-center absolute top-28 md:top-40 gap-5 px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-10 w-full max-w-7xl items-center justify-between">
+          <div className="flex-1">
+            <video
+              src="/videos/society_cars_demo.mp4"
+              controls
+              autoPlay
+              loop
+              muted
+              playsInline
+              className=" h-130 rounded-2xl ml-30"
+            />
+          </div>
+
+          <div className="w-full lg:w-1/2 flex flex-2 flex-col gap-5 text-white">
+            <Image
+              src={societyCarsLogo}
+              alt="App Logo"
+              width={120}
+              height={120}
+              className="self-start"
+            />
+
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+              Experience the Power of Our App
+            </h1>
+
+            <p className="text-neutral-300 text-lg leading-relaxed max-w-lg">
+              Watch how our AI-powered image editing tool transforms your
+              workflow. Add layers, edit properties, remove backgrounds,
+              generate images, and let our LangChain-driven assistant help you
+              build stunning visuals effortlessly.
+            </p>
+          </div>
         </div>
 
-        <div className="w-[99vw] mt-8 md:mt-15">
+        <div className="w-[99vw] mt-8 md:mt-12">
           <Footer bgColor="#0a0a0a" />
         </div>
       </div>
