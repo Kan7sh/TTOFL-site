@@ -3,13 +3,8 @@
 import { useState } from "react";
 import Footer from "@/components/ui/footer";
 import GlassmorphNavBar from "@/components/ui/glassmorph-navbar";
-import { Input } from "@/components/ui/input";
-import { InteractiveHoverButton } from "@/components/ui/interactiveHoverButton";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { Textarea } from "@/components/ui/textarea";
-import contact1 from "@/assets/images/CU1.png";
 import societyCarsLogo from "@/assets/society_cars/SocietyCarsLogo.png";
-import societyCarsBusinessLogo from "@/assets/society_cars/SocietyCarsBusinessLogo.png";
 import { cn } from "@/lib/utils";
 
 const validateEmail = (email: string) => {
@@ -23,62 +18,7 @@ export default function SocietyCarsPrivacyPolicy() {
     email: "",
     message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
 
-  const handleInputChange = (e: any) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: any) => {
-    if (!validateEmail(formData.email)) {
-      setSubmitStatus({
-        type: "error",
-        message: "Please enter a valid email address.",
-      });
-      return;
-    }
-
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus({ type: "", message: "" });
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setSubmitStatus({
-          type: "success",
-          message: "Message sent successfully! We'll get back to you soon.",
-        });
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setSubmitStatus({
-          type: "error",
-          message: data.error || "Failed to send message. Please try again.",
-        });
-      }
-    } catch (error) {
-      setSubmitStatus({
-        type: "error",
-        message: "An error occurred. Please try again later.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="relative flex min-h-screen w-full items-center justify-center bg-neutral-950">

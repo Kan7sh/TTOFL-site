@@ -47,7 +47,9 @@ export default function Footer({ bgColor }: { bgColor?: string }) {
               <li>Blog</li>
               <li>Case Studies</li>
               <li>White Papers</li>
-              <li>Videos</li>
+              <li>
+                <Link href="/videos">Videos</Link>
+              </li>
             </ul>
           </div>
 
