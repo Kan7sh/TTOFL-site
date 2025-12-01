@@ -48,14 +48,13 @@ export default function VideosPage() {
             />
 
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Experience the Power of Our App
+              Society Car at action
             </h1>
 
             <p className="text-neutral-300 text-lg leading-relaxed max-w-lg">
-              Watch how our AI-powered image editing tool transforms your
-              workflow. Add layers, edit properties, remove backgrounds,
-              generate images, and let our LangChain-driven assistant help you
-              build stunning visuals effortlessly.
+              Society Cars is an automobile service app that provides various
+              services such as car cleaning, pit stop service, driver hiring,
+              vehicle rentals, car repairs, and more
             </p>
           </div>
         </div>
