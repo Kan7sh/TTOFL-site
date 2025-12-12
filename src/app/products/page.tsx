@@ -110,11 +110,15 @@ export default function ProductsPage() {
                 <h2 className="text-3xl font-bold mb-6">
                   See Society Cars in Action
                 </h2>
-                <p className="text-lg mb-6">
+                <p className="text-lg ">
                   Watch how Society Cars transforms everyday automobile services
                   within residential communities - from booking to fulfillment.
                 </p>
-
+                <Link href="/terms_and_conditions">
+                  <p className=" mb-5 text-[#f24b03] cursor-pointer">
+                    Terms and Conditions
+                  </p>
+                </Link>
                 <div className="mt-2">
                   <div className="flex items-center mb-4">
                     <Smartphone className="w-5 h-5 text-emerald-400 mr-2" />
@@ -387,12 +391,14 @@ export default function ProductsPage() {
         <div className="font-mono mt-9 mb-15 text-3xl md:text-5xl lg:text-4xl font-extrabold text-center text-white z-10">
           What Our Users Say
         </div>
-      <center><InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="slow"
-          className="mb-20"
-        /></center>
+        <center>
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="slow"
+            className="mb-20"
+          />
+        </center>
       </section>
       <section className="w-full bg-gradient-to-r from-neutral-950 via-neutral-700 to-neutral-950 py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
