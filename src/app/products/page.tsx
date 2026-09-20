@@ -126,12 +126,12 @@ export default function ProductsPage() {
                   </div>
                   <div className="flex gap-6 justify-start">
                     <QRCode
-                      url="https://play.google.com/store/apps/details?id=com.societycars.app"
+                      url="https://play.google.com/store/apps/details?id=com.ttofl.society_cars&hl=en_IN"
                       label="Play Store"
                       type="Android"
                     />
                     <QRCode
-                      url="https://apps.apple.com/app/society-cars/id123456789"
+                      url="https://apps.apple.com/in/app/society-cars/id6758573342"
                       label="App Store"
                       type="iOS"
                     />
